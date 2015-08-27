@@ -1,0 +1,417 @@
+@font-face {
+	font-family: ApexBook;
+	src: url(fonts/verizon-apex/VerizonApex-Book.eot?#iefix) format("embedded-opentype"), url(fonts/verizon-apex/VerizonApex-Book.woff) format("woff"), url(fonts/verizon-apex/VerizonApex-Book.ttf) format("truetype"), url(fonts/verizon-apex/VerizonApex-Book.svg#svgFontName) format("svg");
+	font-weight: normal;
+}
+@font-face {
+	font-family: ApexMedium;
+	src: url(fonts/verizon-apex/apex-medium-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/verizon-apex/apex-medium-webfont.woff) format("woff"), url(fonts/verizon-apex/apex-medium-webfont.ttf) format("truetype"), url(fonts/verizon-apex/apex-medium-webfont.svg#svgFontName) format("svg");
+	font-weight: normal;
+}
+@font-face {
+	font-family: ApexMediumItalic;
+	src: url(fonts/verizon-apex/VerizonApex-MediumItalic.eot?#iefix) format("embedded-opentype"), url(fonts/verizon-apex/VerizonApex-MediumItalic.woff) format("woff"), url(fonts/verizon-apex/VerizonApex-MediumItalic.ttf) format("truetype"), url(fonts/verizon-apex/VerizonApex-MediumItalic.svg#svgFontName) format("svg");
+	font-weight: normal;
+}
+.vz-theme html {
+	min-height: 100%;
+}
+.vz-theme body {
+	min-height: 100%;
+}
+.vz-theme html {
+	position: relative;
+}
+.vz-theme body {
+	background: none; margin: 0px; -ms-overflow-y: auto;
+}
+.vz-theme .layout {
+	margin: 0px auto; padding: 0px 20px; min-width: 800px;
+}
+.vz-theme .header {
+	height: 120px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.vz-theme .VZlogo {
+	width: 108px; height: 109px; float: left;
+}
+.vz-theme .VZFooter {
+	width: 108px; height: 109px; float: right;
+}
+.vz-theme .app-name {
+	margin: 70px 0px 0px 20px; font-family: ApexMedium, sans-serif, Arial, Helvetica; font-size: 28px; float: left;
+}
+.vz-theme .app-support {
+	background: url("../media/Chat.png") no-repeat; margin: 20px 0px 0px; padding: 0px 0px 0px 50px; font-family: ApexMedium, sans-serif, Arial, Helvetica; font-size: 16px; float: right;
+}
+.vz-theme .app-support a {
+	color: rgb(109, 110, 113);
+}
+.vz-theme .app-support a:hover {
+	text-decoration: underline;
+}
+.vz-theme #copyrightfooter {
+	display: none;
+}
+.footer {
+	display: none;
+}
+.vz-theme .footer {
+	width: 100%; text-align: center; bottom: 0px; overflow: hidden; font-size: 14px; margin-top: 20px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid; display: block; position: absolute; background-color: rgb(234, 234, 234);
+}
+.vz-theme .footer a {
+	color: rgb(46, 103, 167); text-decoration: none;
+}
+.vz-theme .footer a:hover {
+	text-decoration: underline;
+}
+.vz-theme .copyrights {
+	padding: 8px 0px;
+}
+.vz-theme .button {
+	background: rgb(51, 51, 51); padding: 5px 10px; border: currentColor; transition:0.15s; text-align: center; color: rgb(255, 255, 255); font-family: ApexMedium; font-size: 14px; text-decoration: none; cursor: pointer; -moz-user-select: none;
+}
+.vz-theme .disabled.button {
+	background: rgb(51, 51, 51); padding: 5px 10px; border: currentColor; transition:0.15s; text-align: center; color: rgb(255, 255, 255); font-family: ApexMedium; font-size: 14px; text-decoration: none; cursor: pointer; -moz-user-select: none;
+}
+.vz-theme .button:hover {
+	color: rgb(246, 244, 244); background-color: rgb(65, 65, 65);
+}
+.vz-theme .button:focus {
+	box-shadow: 0px 0px 0px 1px #2e67b2, inset 0px 0px 0px 1px #2e67b2; -webkit-box-shadow: 0 0 0 1px #2e67b2, inset 0 0 0 1px #2e67b2; -moz-box-shadow: 0 0 0 1px #2e67b2, inset 0 0 0 1px #2e67b2;
+}
+.vz-theme #authentication {
+	height: auto; position: relative; min-height: 100%;
+}
+
+.vz-theme .mast {
+	height: 150px; color: white; overflow: hidden; font-size: 14px; display: block; background-color: rgb(231, 28, 36);
+}
+.vz-theme .mast-content {
+	background : url("../media/Technician.gif") no-repeat right; padding: 35px 280px 0px 40px; height: 175px;
+}
+.vz-theme .mast a {
+	color: white;
+}
+.vz-theme h1 {
+	margin: 16px 0px; font-family: ApexMediumItalic, Arial, Helvetica, sans-serif; font-size: 24px; font-weight: lighter;
+}
+.vz-theme .login-content {
+	padding: 50px 40px;
+}
+.vz-theme .signin-block {
+	width: 350px;
+}
+.vz-theme .login-text {
+	font-weight: bold; margin-bottom: 20px;
+}
+.vz-theme .label {
+	margin-bottom: 5px;
+}
+.vz-theme .red {
+	color: rgb(230, 27, 52);
+}
+.vz-theme #credentialupdate-container {
+	min-height: inherit; min-width: inherit;
+}
+.vz-theme #logonbox-container {
+	min-height: inherit; min-width: inherit;
+}
+.vz-theme #credentialupdate-innerbox {
+	height: auto;
+}
+.vz-theme #logonbox-innerbox {
+	height: auto;
+}
+.vz-theme .links-info {
+	margin-left: 400px;
+}
+.vz-theme hr {
+	border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor rgb(234, 234, 234); margin: 30px 0px 25px;
+}
+.vz-theme .text {
+	font-size: 14px;
+}
+.vz-theme .block h1 {
+	margin: 0px;
+}
+.vz-theme .quick-links li {
+	margin: 8px 0px;
+}
+.vz-theme .forgot-pass {
+	margin-bottom: 20px;
+}
+.vz-theme #credentialupdate-container {
+	top: 0px;
+}
+#logonbox-container {
+	top: 0px;
+}
+.vz-theme .mask {
+	opacity: 0.5; background-color: rgb(0, 0, 0);
+}
+.vz-theme .messagepane {
+	overflow: hidden; margin-top: 0px;
+}
+.vz-theme .ctxsui-messagebox {
+	color: rgb(51, 51, 51); margin-top: 222px;
+}
+.vz-theme .ctxsui-messagebox .messagebox-middlebody {
+	background: none; border: 10px solid rgb(226, 227, 228);
+}
+.vz-theme .with-background-glow {
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
+}
+.vz-theme .with-background-solid {
+	opacity: 0.95; background-color: rgb(255, 255, 255);
+}
+.vz-theme .credentialform label {
+	color: rgb(51, 51, 51);
+}
+.vz-theme #credentialupdate-innerbox {
+	background: none; border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.vz-theme #logonbox-innerbox {
+	background: none; border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+.vz-theme #header-logo {
+	background: none; display: none;
+}
+.vz-theme #resources-header {
+	background: none; height: 165px;
+}
+.vz-theme .header-red {
+	height: 44px; background-color: rgb(237, 28, 36);
+}
+.vz-theme #header-userinfo a {
+	color: rgb(255, 255, 255);
+}
+.vz-theme #header-userinfo .usermenu a {
+	color: rgb(68, 68, 68);
+}
+.vz-theme #header-userinfo .usermenu a.active {
+	background: rgb(219, 219, 219);
+}
+.vz-theme #resources-searcharea {
+	margin-right: 0px;
+}
+.vz-theme #resources-searcharea .searchbox-container {
+	margin-right: 0px;
+}
+.vz-theme #resources-navigationbar .storebutton {
+	border-color: rgb(89, 90, 93); background-color: rgb(51, 51, 51);
+}
+.vz-theme #resources-navigationbar .storebutton:hover {
+	background: rgb(65, 65, 65);
+}
+.vz-theme #allapps-picker {
+	padding: 0px; overflow: hidden;
+}
+.vz-theme #myapps-emptyresult {
+	color: rgb(51, 51, 51); text-transform: capitalize; font-family: "ApexMediumItalic",Arial,sans-serif;
+}
+.vz-theme #can-add-apps {
+	color: rgb(51, 51, 51); text-transform: capitalize; font-family: "ApexMediumItalic",Arial,sans-serif;
+}
+.vz-theme #resources-categoriesmenu .categoryname {
+	padding: 9px 0px 0px 24px;
+}
+.vz-theme #resources-appsmenu .resource {
+	height: 35px;
+}
+.vz-theme #resources-appsmenu .resourcesfolder {
+	height: 35px;
+}
+.vz-theme .context-menu {
+	border: 1px solid rgb(204, 204, 204); background-color: rgb(236, 237, 238);
+}
+.vz-theme #resources-searcharea .searchbox-results {
+	padding-bottom: 0px;
+}
+.vz-theme .myapps-name {
+	color: rgb(51, 51, 51);
+}
+.vz-theme .myapps-icon-background {
+	opacity: 1; background-color: rgb(225, 227, 228);
+}
+.vz-theme .myapps-icon:focus {
+	border: 1px solid rgb(155, 155, 155);
+}
+.vz-theme .hovered.myapps-icon {
+	border: 1px solid rgb(155, 155, 155);
+}
+.vz-theme .switcher-button-left {
+	background: none;
+}
+.vz-theme .switcher-button-right {
+	background: none;
+}
+.vz-theme .selected.switcher-button-left {
+	background: none;
+}
+.vz-theme .selected.switcher-button-right {
+	background: none;
+}
+.vz-theme .switcher-button-left:hover {
+	background: none;
+}
+.vz-theme .switcher-button-right:hover {
+	background: none;
+}
+.vz-theme .switcher-button {
+	color: rgb(255, 255, 255); background-color: rgb(155, 155, 155);
+}
+.vz-theme .switcher-button-left {
+	border-radius: 5px 0px 0px 5px; box-shadow: inset 1px 0px 3px rgba(0,0,0,0.5);
+}
+.vz-theme .switcher-button-right {
+	border-radius: 0px 5px 5px 0px; box-shadow: inset -1px 0px 3px rgba(0,0,0,0.5);
+}
+.vz-theme .switcher-button-left:hover {
+	color: rgb(255, 255, 255); background-color: rgb(163, 163, 163);
+}
+.vz-theme .switcher-button-right:hover {
+	color: rgb(255, 255, 255); background-color: rgb(163, 163, 163);
+}
+.vz-theme .selected.switcher-button-left {
+	color: rgb(255, 255, 255); background-color: rgb(51, 51, 51);
+}
+.vz-theme .selected.switcher-button-right {
+	color: rgb(255, 255, 255); background-color: rgb(51, 51, 51);
+}
+.vz-theme .switcher-button-left a:active {
+	color: rgb(255, 255, 255);
+}
+.vz-theme .switcher-button-right a:active {
+	color: rgb(255, 255, 255);
+}
+.vz-theme .left {
+	float: left;
+}
+.vz-theme .right {
+	float: right;
+}
+.vz-theme #logonbox-logonform {
+	padding: 0px;
+}
+.vz-theme .clearfix::before {
+	display: table; content: "";
+}
+.vz-theme .clearfix::after {
+	display: table; content: "";
+}
+.vz-theme .clearfix::after {
+	clear: both;
+}
+.vz-theme .clearfix {
+	
+}
+.vz-theme .note-monitor {
+	margin: 20px 0px 0px 25px; border: 1px solid black; color: black; font-family: ApexMedium, sans-serif, Arial, Helvetica; font-size: 18px; float: left; background-color: yellow;
+}
+
+.container
+{
+	height:auto;
+}
+.empInfo
+{
+	width:99%;
+	border: 1px solid silver;
+	border-radius: 5px;
+}
+.poolingInfo
+{
+	width:99%;
+	border: 1px solid silver;
+	border-radius: 5px;
+	hight: 800px;
+}
+.legend
+{
+	font-weight: bold;
+	font-size:16px;
+	color: navy;	
+}
+.readOnlySection
+{
+	width: 50%;
+	float: left;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin: 0 auto;
+}
+.controlSection
+{
+	font-weight: bold;
+	font-size:12px;
+	width: 100%;
+	float: left;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin: 0 auto;
+	
+}
+
+.readOnlyLabel
+{
+	width:30%;
+	font-weight:bold;
+	padding-right: 5%;
+}
+.controlLabel
+{
+	
+	padding-right: 5%;
+	width:30%;
+	float:left;
+	
+}
+
+.weekly
+{
+	display:none;
+}
+
+.poolingAvlDetails
+{
+	width:99%;
+	border: 1px solid silver;
+	border-radius: 5px;
+	margin-top: 10px;
+	
+}
+.avlVehicleEven
+{
+	width:99%;
+	border: 1px solid silver;
+	border-radius: 5px;
+	margin-top: 5px;
+	background-color: #F6CECE;	
+}
+.avlVehicleOdd
+{
+	width:99%;
+	border: 1px solid silver;
+	border-radius: 5px;
+	margin-top: 5px;
+	background-color: #F8E0E0;	
+}
+
+.poolAvlMap
+{
+	width:70%;
+	border: 1px solid silver;
+	border-radius: 5px;
+	margin-top: 5px;
+	box-sizing: border-box;
+	
+}
+.poolAvlGrid
+{
+	width:25%;
+	border: 1px solid silver;
+	border-radius: 5px;
+	margin-top: 5px;
+	box-sizing: border-box;
+	
+}

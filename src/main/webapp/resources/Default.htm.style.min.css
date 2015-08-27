@@ -1,0 +1,1516 @@
+html {
+	margin: 0px; padding: 0px; width: 100%; height: 100%; color: rgb(51, 51, 51); font-family: Segoe UI,Helvetica Neue,Helvetica,Segoe UI; font-size: 12px;
+}
+body {
+	margin: 0px; padding: 0px; width: 100%; height: 100%; color: rgb(51, 51, 51); font-family: Segoe UI,Helvetica Neue,Helvetica,Segoe UI; font-size: 12px;
+}
+div {
+	padding: 0px; -moz-user-select: -moz-none;
+}
+.jspScrollable:focus {
+	outline: rgb(204, 204, 204) dotted 1px;
+}
+.hide-outline.jspScrollable:focus {
+	
+}
+.mobileScroll {
+	-ms-overflow-y: auto; -webkit-overflow-scrolling: touch;
+}
+body {
+	overflow: hidden; z-index: 0; cursor: default; background-image: url("../media/bg_bubbles.jpg"); background-size: cover; background-color: rgb(0, 20, 11); -webkit-touch-callout: none;
+}
+.jspVerticalBar {
+	background: none; width: 12px;
+}
+.jspHorizontalBar {
+	height: 12px;
+}
+.jspVerticalBar .jspDrag {
+	background: none; left: 1px; width: 10px; overflow: hidden; z-index: 1; cursor: default;
+}
+.jspVerticalBar .jspDragTop {
+	top: 0px; width: 10px; height: 3px; position: absolute;
+}
+.jspVerticalBar .jspDragMiddle {
+	top: 3px; width: 10px; bottom: 3px; position: absolute;
+}
+.jspVerticalBar .jspDragBottom {
+	width: 10px; height: 3px; bottom: 0px; position: absolute;
+}
+.high-contrast .jspVerticalBar .jspDrag {
+	border: 1px solid blue; width: 8px;
+}
+.jspVerticalBar .jspTrack {
+	background: none;
+}
+.jspTrackBg {
+	top: 0px; width: 11px; height: 100%; position: absolute; background-color: rgb(51, 51, 51);
+}
+.jspVerticalBar .jspDragTop {
+	height: 0px;
+}
+.jspVerticalBar .jspDragBottom {
+	height: 0px;
+}
+.jspVerticalBar .jspDragMiddle {
+	background: linear-gradient(to right, rgba(125, 125, 125, 1) 0px, rgba(26, 26, 26, 0.76) 100%); border-radius: 4px; top: 0px; bottom: 0px;
+}
+.high-contrast .jspVerticalBar .jspDragMiddle {
+	background: rgb(0, 0, 0); filter: none;
+}
+.high-contrast #credentialupdate-container {
+	border-width: 0px;
+}
+.high-contrast #logonbox-container {
+	border-width: 0px;
+}
+input {
+	font-family: inherit; font-size: 12px; -moz-user-select: text;
+}
+select {
+	font-family: inherit; font-size: 12px; -moz-user-select: text;
+}
+h1 {
+	margin: 0px 0px 5px; padding: 0px; font-size: 20px; font-weight: normal;
+}
+a:focus {
+	outline: rgb(204, 204, 204) dotted 1px;
+}
+a {
+	color: black; text-decoration: none;
+}
+a:active {
+	color: black; text-decoration: none;
+}
+a:visited {
+	color: black; text-decoration: none;
+}
+a img {
+	border: 0px currentColor;
+}
+.spacer {
+	margin: 0px; padding: 0px; width: 0px; height: 0px; clear: both;
+}
+#hiddeniframes {
+	left: -999px; top: -999px; width: 0px; height: 0px; visibility: hidden; position: absolute;
+}
+.clear {
+	clear: both;
+}
+.headerText {
+	padding-top: 14px; font-size: 14px; display: inline-block; white-space: nowrap;
+}
+.shortSeparator {
+	margin-top: 2px; margin-right: 8px; margin-left: 8px;
+}
+.content {
+	margin: 0px; padding: 0px; width: 100%; height: 628px;
+}
+.mainpane {
+	display: none;
+}
+.centered {
+	margin: auto; text-align: center; display: block;
+}
+.onemomentimage {
+	width: 50px; height: 50px; margin-top: 35px; margin-bottom: 35px;
+}
+.onemomentimage::before {
+	content: url("../media/onemoment.gif");
+}
+#logonbox-logonform .onemomentimage {
+	top: 25px; position: absolute;
+}
+.loaderimage {
+	width: 24px; height: 24px; margin-top: 30px; margin-bottom: 40px;
+}
+.loaderimage::before {
+	content: url("../media/Loader.gif");
+}
+.lighttext {
+	color: gray;
+}
+#dummytextbox {
+	left: -1000px; top: -1000px; position: fixed; z-index: -1000;
+}
+div.dottedseparator {
+	width: 100%; height: 10px; margin-top: 20px; background-image: url("../media/dotseparator.png"); background-repeat: repeat-x;
+}
+.button {
+	background: linear-gradient(rgba(238, 238, 238, 1) 0px, rgba(204, 204, 204, 1) 100%); padding: 0px 12px; border-radius: 3px; height: 20px; text-align: center; line-height: 20px; font-size: 12px; text-decoration: none; margin-right: 5px; border-top-color: darkgray; border-top-width: 1px; border-top-style: solid; display: inline-block; white-space: nowrap; min-width: 50px; -webkit-border-radius: 3px; -ms-border-radius: 3px; -moz-border-radius: 3px;
+}
+.high-contrast .button {
+	background: black; border: 1px solid white;
+}
+.high-contrast .button:focus {
+	outline: yellow dotted 1px;
+}
+.ja .button {
+	padding: 0px 5px 1px;
+}
+.zh-TW .button {
+	padding: 0px 5px 1px;
+}
+.zh-CN .button {
+	padding: 0px 5px 1px;
+}
+.ko .button {
+	padding: 0px 5px 1px;
+}
+.zh-CN .button {
+	padding-top: 2px;
+}
+.ko .button {
+	padding-top: 2px;
+}
+.button:hover {
+	background: linear-gradient(rgba(232, 232, 232, 1) 29%, rgba(142, 142, 142, 1) 100%);
+}
+.button:focus {
+	background: linear-gradient(rgba(232, 232, 232, 1) 29%, rgba(142, 142, 142, 1) 100%);
+}
+.button:active {
+	background: linear-gradient(rgba(119, 119, 119, 1) 0px, rgba(89, 89, 89, 1) 100%); border-top-color: rgb(119, 119, 119);
+}
+.button:focus {
+	outline-offset: 1px;
+}
+.disabled.button {
+	background: url("../media/DisabledButton.png"); color: rgb(0, 0, 0); font-style: normal; border-top-color: transparent;
+}
+.disabled.button:focus {
+	background: url("../media/DisabledButton.png"); color: rgb(0, 0, 0); font-style: normal; border-top-color: transparent;
+}
+.disabled.button:hover {
+	background: url("../media/DisabledButton.png"); color: rgb(0, 0, 0); font-style: normal; border-top-color: transparent;
+}
+.disabled.button:active {
+	background: url("../media/DisabledButton.png"); color: rgb(0, 0, 0); font-style: normal; border-top-color: transparent;
+}
+[disabled='disabled'].button {
+	background: url("../media/DisabledButton.png"); color: rgb(0, 0, 0); font-style: normal; border-top-color: transparent;
+}
+.screenreader-only {
+	left: -999px; position: absolute;
+}
+#preload1 {
+	background-image: url("../media/washer_sample.gif");
+}
+#preload2 {
+	background-image: url("../media/LaunchReady.png");
+}
+#preload3 {
+	background-image: url("../media/DisabledButton.png");
+}
+#preload4 {
+	background-image: url("../media/Scroll_gradientBar_green_transparent.png");
+}
+#preload_auth1 {
+	background-image: url("../uiareas/Authentication/media/error.png");
+}
+#preload_auth2 {
+	background-image: url("../uiareas/Authentication/media/warning.png");
+}
+#preload_auth3 {
+	background-image: url("../uiareas/Authentication/media/info.png");
+}
+#preload_auth4 {
+	background-image: url("../uiareas/Authentication/media/tick.png");
+}
+#preload_store1 {
+	background-image: url("../uiareas/Store/media/transparent.gif");
+}
+#preload_store2 {
+	background-image: url("../uiareas/Store/media/Icon_close_hint.png");
+}
+#preload_store3 {
+	background-image: url("../uiareas/Store/media/Icon_close_solid.png");
+}
+#preload_store4 {
+	background-image: url("../uiareas/Store/media/cancel.png");
+}
+#preload_store7 {
+	background-image: url("../uiareas/Store/media/store_category_eastarrow1.png");
+}
+#preload_store8 {
+	background-image: url("../uiareas/Store/media/store_category_eastarrow_hover1.png");
+}
+#preload_store9 {
+	background-image: url("../uiareas/Store/media/store_category_southarrow1.png");
+}
+#preload_store10 {
+	background-image: url("../uiareas/Store/media/store_category_southarrow_hover1.png");
+}
+#preload_store13 {
+	background-image: url("../uiareas/Store/media/DownArrow.png");
+}
+#preload_store14 {
+	background-image: url("../uiareas/Store/media/DownArrowSelected.png");
+}
+#preload_store15 {
+	background-image: url("../uiareas/Store/media/CitrixDesktop_AvailableGrayDot.png");
+}
+#preload_store16 {
+	background-image: url("../uiareas/Store/media/CitrixDesktop_RunningGreenDot.png");
+}
+#preload_store17 {
+	background-image: url("../uiareas/Store/media/accessDenied.png");
+}
+#preload_store18 {
+	background-image: url("../uiareas/Store/media/pending.png");
+}
+#preload_store19 {
+	background-image: url("../uiareas/Store/media/AddAppCoachingMark.png");
+}
+.messagepane {
+	margin-top: 222px;
+}
+.ctxsui-messagebox {
+	width: 474px; height: 142px; color: white; margin-right: auto; margin-left: auto; display: table; max-height: 300px; min-width: 388px;
+}
+.high-contrast .ctxsui-messagebox {
+	background: black; border: 1px solid white;
+}
+#javascriptmessagepane {
+	display: block;
+}
+.ctxsui-messagebox > .messagebox-middle {
+	display: table-row;
+}
+.ctxsui-messagebox .messagebox-middle > div {
+	display: table-cell;
+}
+.ctxsui-messagebox {
+	border-radius: 3px; -webkit-border-radius: 3px; -ms-border-radius: 3px;
+}
+.ctxsui-messagebox .messagebox-middlebody {
+	border-radius: 3px; -webkit-border-radius: 3px; -ms-border-radius: 3px;
+}
+.ctxsui-messagebox .messagebox-middlebody {
+	background: url("../media/messagebox/middlebody.png"); padding: 22px 23px 24px 22px; border: 1px solid rgb(119, 142, 138); position: relative; box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);
+}
+.with-background-solid {
+	background-color: rgba(30, 65, 55, 0.95);
+}
+.ctxsui-messagebox .messagebox-title {
+	margin: 30px auto 22px; text-align: center; font-size: 16px;
+}
+.ctxsui-messagebox .messagebox-body {
+	text-align: center; margin-bottom: 30px;
+}
+.ctxsui-messagebox .messagebox-buttons {
+	text-align: center; margin-top: 30px;
+}
+.ctxsui-messagebox .ctxsAlert {
+	padding: 5px 15px; height: 100%;
+}
+.ctxsui-messagebox .ctxsAlert > .messagebox-title {
+	margin: 0px auto 22px;
+}
+.ctxsui-messagebox .ctxsAlert > .messagebox-buttons .button {
+	margin-right: 4px;
+}
+.dialogBoxOverlay {
+	position: fixed; z-index: 105;
+}
+.dialogBoxOverlay .ctxsui-messagebox {
+	z-index: 12000;
+}
+.mask {
+	left: 0px; top: 0px; width: 100%; height: 100%; display: block; position: fixed; z-index: 10000;
+}
+.ctxsWorkflowNotification #workflowDetails .jspTrackBg {
+	background: url("../media/Scroll_gradientBar_green_transparent.png") repeat-y;
+}
+.ctxsui-messagebox .ctxsAlert .ctxsWorkflowNotification .detailsLink:focus {
+	outline: rgb(204, 204, 204) dotted 1px;
+}
+.ctxsui-messagebox .ctxsAlert .ctxsWorkflowNotification .detailsLink {
+	color: white; margin-left: 150px;
+}
+#workflowDetails .jspTrackBg {
+	background: none;
+}
+#workflowDetails {
+	overflow: hidden; display: none; max-height: 200px;
+}
+.notificationRequestMessageContainer {
+	margin: 0px auto;
+}
+.requestNotificationImage {
+	width: 42px; height: 42px; clear: left; float: left;
+}
+.notificationRequestMessage {
+	padding-top: 9px; padding-left: 8px;
+}
+.appContainingDiv {
+	height: 22px;
+}
+.workflowAppDetailsIcon {
+	width: 20px; height: 20px; clear: left; float: left;
+}
+.workflowAppDetailsText {
+	margin: 0px; padding-top: 2px; padding-left: 30px; white-space: nowrap;
+}
+#deniedApps {
+	padding-top: 5px;
+}
+.activate-plugin-title.messagebox-title {
+	font-size: 18px; margin-top: 15px;
+}
+.activate-plugin-text.messagebox-body {
+	margin-bottom: 20px;
+}
+.activate-plugin-box {
+	margin: 0px auto 15px; display: block;
+}
+.firefox.activate-plugin-box {
+	border: 1px solid rgb(119, 119, 119); width: 180px; height: 100px; z-index: -1; background-color: rgb(72, 72, 72);
+}
+.safari.activate-plugin-box {
+	width: 100%; height: 30px;
+}
+.chrome.activate-plugin-text a:link {
+	color: white; text-decoration: underline;
+}
+.chrome.activate-plugin-text a:visited {
+	color: white; text-decoration: underline;
+}
+#pluginassistant-container {
+	color: rgb(102, 102, 102);
+}
+.pluginassistant-details {
+	text-align: center; margin-top: 30px;
+}
+.pluginassistant-details button {
+	margin-top: 15px;
+}
+p.pluginassistant-details a {
+	text-decoration: underline;
+}
+p.pluginassistant-details a:link {
+	color: white;
+}
+p.pluginassistant-details a:visited {
+	color: white;
+}
+#legalstatement-checkbox {
+	vertical-align: middle;
+}
+#legalstatement-label {
+	vertical-align: middle;
+}
+#pluginassistant-bottom {
+	width: 100%; height: 21px; text-align: center; margin-right: auto; margin-left: auto; position: relative;
+}
+#pluginassistant-bottom span {
+	color: white;
+}
+#pluginassistant-bottom a {
+	padding: 5px; color: white; font-size: 11px;
+}
+#pluginassistant-header {
+	margin: 15px auto auto; width: 455px; text-align: center; font-size: 18px;
+}
+.pluginassistant-popup {
+	background-position: bottom; padding: 10px; border: 1px solid rgb(94, 94, 94); display: none; position: absolute; background-image: url("../uiareas/PluginAssistant/media/bubble_bg.png"); background-repeat: repeat-x; background-color: rgb(251, 251, 251);
+}
+#securitydetails-popup {
+	width: 30em;
+}
+#licenseagreement-popup {
+	width: 20em;
+}
+#acceptterms-popup {
+	top: 72px; width: 226px; height: 58px; right: 36px; display: table; visibility: hidden; position: absolute; max-height: 58px;
+}
+.high-contrast #acceptterms-popup {
+	background: black; border: 1px solid blue;
+}
+.high-contrast #acceptterms-popup .top {
+	display: none;
+}
+.high-contrast #acceptterms-popup .bottom {
+	display: none;
+}
+.high-contrast #acceptterms-popup .left {
+	display: none;
+}
+.high-contrast #acceptterms-popup .right {
+	display: none;
+}
+#acceptterms-popup .top {
+	background-position: bottom; width: 218px; height: 10px; background-image: url("../uiareas/PluginAssistant/media/bubble_top.png"); background-repeat: no-repeat;
+}
+#acceptterms-popup .bottom {
+	background-position: top; width: 218px; height: 19px; background-image: url("../uiareas/PluginAssistant/media/bubble_bottom.png"); background-repeat: no-repeat;
+}
+#acceptterms-popup .middle {
+	display: table;
+}
+#acceptterms-popup .left {
+	background-position: right; width: 6px; height: 58px; display: table-cell; background-image: url("../uiareas/PluginAssistant/media/bubble_left.png"); background-repeat: repeat-y;
+}
+#acceptterms-popup .right {
+	background-position: left; width: 2px; height: 58px; display: table-cell; background-image: url("../uiareas/PluginAssistant/media/bubble_right.png"); background-repeat: repeat-y; background-color: transparent;
+}
+#acceptterms-popup .center {
+	background-position: bottom; width: 190px; text-align: left; padding-right: 10px; padding-left: 10px; font-size: 11px; vertical-align: top; display: table-cell; max-height: 58px; background-image: url("../uiareas/PluginAssistant/media/bubble_bg.png"); background-repeat: repeat-x;
+}
+#resources-appsmenu .resource {
+	margin: 0px; width: 298px; height: 33px; color: rgb(204, 204, 204); border-bottom-color: rgb(61, 65, 66); border-bottom-width: 1px; border-bottom-style: solid; position: relative; z-index: 1; -ms-text-overflow: ellipsis;
+}
+#resources-appsmenu .resourcesfolder {
+	margin: 0px; width: 298px; height: 33px; color: rgb(204, 204, 204); border-bottom-color: rgb(61, 65, 66); border-bottom-width: 1px; border-bottom-style: solid; position: relative; z-index: 1; -ms-text-overflow: ellipsis;
+}
+.high-contrast #resources-appsmenu .resource {
+	width: auto; border-left-color: blue; border-left-width: 1px; border-left-style: solid;
+}
+.high-contrast #resources-appsmenu .resourcesfolder {
+	width: auto; border-left-color: blue; border-left-width: 1px; border-left-style: solid;
+}
+#resources-appsmenu .resource {
+	cursor: pointer;
+}
+#resources-appsmenu a {
+	outline: 0px;
+}
+#resources-appsmenu .resourcesfolder span {
+	padding: 9px 4px 4px 12px; width: 200px; font-weight: bold; display: block; white-space: nowrap;
+}
+#resources-appsmenu .resource-icon {
+	width: 20px; height: 20px; padding-left: 27px; margin-top: 8px; margin-right: 13px; float: left;
+}
+#resources-appsmenu .launch-waiting .resource-icon::before {
+	margin-left: -22px; position: absolute; content: url("../uiareas/Store/../../media/washer_sample.gif");
+}
+#resources-appsmenu .launch-ready .resource-icon::before {
+	margin-top: 2px; margin-left: -15px; position: absolute; content: url("../uiareas/Store/../../media/LaunchReady.png");
+}
+#resources-appsmenu .titlebox {
+	text-align: left; font-size: 16pt; font-weight: bold; margin-top: 7px; margin-right: 0px; margin-left: 0px; float: left;
+}
+#resources-appsmenu .innertitle {
+	height: 0px; display: none;
+}
+#resources-appsmenu .resource-icon img {
+	width: 20px; height: 20px;
+}
+#allapps-picker {
+	padding: 15px 0px; overflow: hidden;
+}
+#allapps-picker .resource-icon img {
+	z-index: 1000;
+}
+.high-contrast #allapps-picker {
+	margin: 15px 0px; padding: 0px; border-top-color: blue; border-right-color: blue; border-top-width: 1px; border-right-width: 1px; border-top-style: solid; border-right-style: solid;
+}
+#resources-appsmenu .resource-name {
+	padding: 3px 0px 0px 4px; width: 180px; height: 18px; color: rgb(204, 204, 204); overflow: hidden; font-size: 12px; margin-top: 6px; display: block; white-space: nowrap; clip: auto;
+}
+#resources-appsmenu .subscription-icon {
+	top: 10px; width: 16px; height: 15px; right: 20px; position: absolute;
+}
+#resources-appsmenu .active.resource .resource-name {
+	color: white; text-decoration: underline;
+}
+#resources-appsmenu .resource .resource-name {
+	color: rgb(204, 204, 204);
+}
+#resources-appsmenu .resource-text {
+	float: left;
+}
+.categoriesmenu-inner {
+	padding-right: 0px; -ms-overflow-x: hidden; -ms-overflow-y: auto;
+}
+#resources-categoriesmenu .featured-button {
+	list-style: none; display: list-item;
+}
+#resources-categoriesmenu .allapps-button {
+	list-style: none; display: list-item;
+}
+#resources-categoriesmenu .navigation-heading {
+	height: 35px; color: white; font-size: 12px; border-top-color: rgb(46, 47, 49); border-top-width: 1px; border-top-style: solid; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+#resources-categoriesmenu .navigation-subheading {
+	height: 35px; color: white; font-size: 12px; border-top-color: rgb(46, 47, 49); border-top-width: 1px; border-top-style: solid; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.high-contrast #resources-categoriesmenu .navigation-heading {
+	border-right-color: blue; border-left-color: blue; border-right-width: 1px; border-left-width: 2px; border-right-style: solid; border-left-style: solid;
+}
+.high-contrast #resources-categoriesmenu .navigation-subheading {
+	border-right-color: blue; border-left-color: blue; border-right-width: 1px; border-left-width: 2px; border-right-style: solid; border-left-style: solid;
+}
+#resources-categoriesmenu a {
+	color: white;
+}
+#resources-categoriesmenu a:visited {
+	color: white;
+}
+#resources-categoriesmenu a:active {
+	color: white;
+}
+#resources-categoriesmenu .arrow {
+	outline: 0px;
+}
+#resources-categoriesmenu .categoryname {
+	outline: 0px;
+}
+#resources-categoriesmenu .arrow {
+	width: 40px; height: 35px; float: left; display: block; cursor: pointer;
+}
+#resources-categoriesmenu .categoryname {
+	width: 220px; float: left; display: block;
+}
+#resources-categoriesmenu .categoryname {
+	padding: 12px 0px 0px 24px; position: relative; cursor: pointer;
+}
+#resources-categoriesmenu .folder .categoryname {
+	padding: 12px 0px 0px 44px;
+}
+#resources-categoriesmenu .folder .categoryname {
+	width: 200px;
+}
+#resources-categoriesmenu .folder .categoryname img {
+	left: 0px; top: 13px; position: absolute;
+}
+#resources-categoriesmenu .itemclicked {
+	background-position: 0px -1px; background-image: url("../uiareas/Store/media/categoryFolderLevel.png"); background-repeat: repeat;
+}
+#resources-categoriesmenu .itemclicked > ul {
+	background-image: url("../uiareas/Store/media/store_category_otherssubcat.png"); background-repeat: repeat;
+}
+#resources-categoriesmenu .navigation-heading a {
+	color: rgb(204, 204, 204); text-decoration: none;
+}
+#resources-categoriesmenu .navigation-subheading a {
+	color: rgb(204, 204, 204); text-decoration: none;
+}
+#resources-categoriesmenu a.active.categoryname {
+	color: white; text-decoration: underline;
+}
+#resources-categoriesmenu .allapps-button {
+	border-top-width: 0px;
+}
+.high-contrast #resources-categoriesmenu .allapps-button {
+	border-top-width: 1px;
+}
+#resources-categoriesmenu .menu-normalbutton {
+	position: relative;
+}
+#resources-categoriesmenu .foldericon-placeholder {
+	width: 10px; height: 10px; margin-top: 11px; margin-right: 7px; float: right; display: block;
+}
+.foldericon {
+	width: 10px; height: 10px; margin-top: 11px; margin-right: 7px; float: right; display: block;
+}
+#resources-categoriesmenu .allapps-tree {
+	list-style: none; margin: 0px; padding: 0px;
+}
+.high-contrast #resources-categoriesmenu .allapps-tree {
+	border-bottom-color: blue; border-bottom-width: 1px; border-bottom-style: solid;
+}
+#resources-categoriesmenu .allapps-tree li ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+#resources-categoriesmenu .allapps-tree li ul ul ul {
+	margin-bottom: 0px;
+}
+#resources-categoriesmenu .topfolder {
+	display: none;
+}
+#resources-searcharea .searchbox-container {
+	background-position: top; width: 281px; height: 24px; margin-top: 0px; margin-right: 12px; position: relative; background-image: url("../uiareas/Store/media/SearchField.png"); background-repeat: no-repeat;
+}
+.high-contrast #resources-searcharea .searchbox-container::before {
+	left: 5px; top: 4px; width: 18px; height: 18px; position: absolute; content: url("../uiareas/Store/media/magnify_blackbg.png");
+}
+#resources-searcharea .searchbox-textbox {
+	background: none; border: 0px currentColor; width: 225px; height: 16px; color: white; line-height: 16px; padding-top: 1px; margin-top: 3px; margin-left: 29px;
+}
+.high-contrast #resources-searcharea .searchbox-container {
+	border: 1px solid blue;
+}
+.ko #resources-searcharea .searchbox-textbox {
+	padding-top: 3px;
+}
+.zh-CN #resources-searcharea .searchbox-textbox {
+	padding-top: 3px;
+}
+.searchbox-textbox:focus {
+	color: black;
+}
+#resources-searcharea .searchbox-cancel {
+	top: 6px; width: 12px; height: 12px; right: 8px; display: none; position: absolute; background-repeat: no-repeat;
+}
+#resources-searcharea .searchbox-cancel:hover {
+	background-image: url("../uiareas/Store/media/cancelHover.png");
+}
+#resources-searcharea .searchbox-cancel:focus {
+	background-image: url("../uiareas/Store/media/cancelHover.png");
+}
+#resources-searcharea .searchbox-cancel img {
+	display: block;
+}
+#resources-searcharea ::-ms-clear {
+	display: none;
+}
+#resources-searcharea .searchbox-results {
+	background: rgb(15, 18, 19); left: 6px; top: 4px; width: 269px; color: white; padding-bottom: 15px; font-size: 12px; display: none; position: relative; z-index: 100;
+}
+.high-contrast #resources-searcharea .searchbox-results {
+	border: 1px solid blue;
+}
+#resources-searcharea .scroller {
+	-ms-overflow-y: auto;
+}
+.resultshere-heading {
+	background-position: -1px 0px; height: 24px; color: white; padding-top: 9px; padding-left: 14px; font-size: 13px; background-image: url("../uiareas/Store/media/search_categoryGradient.png"); background-repeat: repeat;
+}
+.resultsother-heading {
+	background-position: -1px 0px; height: 24px; color: white; padding-top: 9px; padding-left: 14px; font-size: 13px; background-image: url("../uiareas/Store/media/search_categoryGradient.png"); background-repeat: repeat;
+}
+.high-contrast .resultshere-heading {
+	border-right-color: blue; border-right-width: 1px; border-right-style: solid;
+}
+.high-contrast .resultsother-heading {
+	border-right-color: blue; border-right-width: 1px; border-right-style: solid;
+}
+.high-contrast .resultsother-heading {
+	border-top-color: blue; border-top-width: 1px; border-top-style: solid;
+}
+.results-nomatch {
+	height: 25px; padding-top: 8px; padding-left: 30px;
+}
+.results-keeptyping {
+	height: 25px; padding-top: 8px; padding-left: 30px;
+}
+.resultshere-heading .cat {
+	display: inline;
+}
+.searchresult-item {
+	height: 32px; border-top-color: rgb(43, 47, 47); border-top-width: 1px; border-top-style: solid; position: relative; cursor: pointer;
+}
+.high-contrast .searchresult-item {
+	border-right-color: blue; border-right-width: 1px; border-right-style: solid;
+}
+.searchresult-item .resource-icon {
+	left: 12px; top: 7px; width: 20px; height: 20px; position: absolute;
+}
+.searchresult-item .name {
+	padding: 3px 0px 0px 4px; left: 40px; top: 5px; width: 180px; height: 18px; color: rgb(204, 204, 204); overflow: hidden; display: block; white-space: nowrap; position: absolute;
+}
+.searchresult-item .subscription-icon {
+	top: 9px; width: 16px; height: 15px; right: 8px; position: absolute;
+}
+.active.searchresult-item .name {
+	color: white; text-decoration: underline;
+}
+.search-emptyresult {
+	text-align: center; padding-top: 50px; font-size: 28px; vertical-align: middle; display: none;
+}
+#resources-appsmenu {
+	position: absolute;
+}
+#resources-categoriesmenu {
+	position: absolute;
+}
+#resources-container {
+	position: relative;
+}
+#resources-myapps {
+	float: left; z-index: 1; min-height: 250px;
+}
+#resources-mydesktops {
+	float: left; z-index: 1; min-height: 250px;
+}
+#resources-navigationbar {
+	left: 0px; width: 68px; height: 100%; float: left; z-index: 4; min-height: 250px;
+}
+#resources-appsmenu {
+	left: 298px; top: 50px; width: 300px; display: none; z-index: 40; background-repeat: repeat; background-color: rgb(36, 37, 39);
+}
+.high-contrast #resources-appsmenu {
+	margin-left: 1px;
+}
+#resources-categoriesmenu {
+	width: 300px; height: 100%; overflow: hidden; display: none; z-index: 5;
+}
+#resources {
+	width: 100%; height: 100%; overflow: hidden; display: none;
+}
+#resources-header {
+	height: 44px; min-width: 700px; background-image: url("../uiareas/Store/media/header_gradient.png"); background-repeat: repeat-x;
+}
+#header-logo {
+	background: url("../uiareas/Store/media/logo_CR.png") no-repeat left top; margin: 16px 0px 0px 22px; width: 116px; height: 14px; float: left;
+}
+.high-contrast #header-logo::before {
+	content: url("../uiareas/Store/media/logo_CR_blackbg.png");
+}
+#header-rightside {
+	padding-top: 3px; float: right;
+}
+#resources-switcher {
+	padding-top: 16px;
+}
+.switcher-button {
+	background-position: center; width: 95px; height: 31px; color: white; line-height: 17px; font-size: 11px; display: inline-block; background-repeat: no-repeat;
+}
+.high-contrast .switcher-button {
+	outline: blue solid 1px;
+}
+.switcher-button-left {
+	background: url("../uiareas/Store/media/SwitcherBtnLeft.png") no-repeat left top;
+}
+.switcher-button-left:hover {
+	background: url("../uiareas/Store/media/SwitcherBtnLeft_Hover.png") no-repeat left top;
+}
+.selected.switcher-button-left {
+	background: url("../uiareas/Store/media/SwitcherBtnLeft_Down.png") no-repeat left top;
+}
+.switcher-button-right {
+	background: url("../uiareas/Store/media/SwitcherBtnRight.png") no-repeat left top;
+}
+.switcher-button-right:hover {
+	background: url("../uiareas/Store/media/SwitcherBtnRight_Hover.png") no-repeat left top;
+}
+.selected.switcher-button-right {
+	background: url("../uiareas/Store/media/SwitcherBtnRight_Down.png") no-repeat left top;
+}
+.switcher-button a {
+	padding: 6px 0px; color: white; font-weight: bold; display: block;
+}
+.switcher-button a:active {
+	color: rgb(204, 204, 204);
+}
+.switcher-button a:visited {
+	color: rgb(204, 204, 204);
+}
+#resources-footer {
+	width: 100%; height: 70px; text-align: center;
+}
+#copyrightfooter {
+	width: 100%;
+}
+#copyrightfooter p {
+	color: rgb(153, 153, 153); padding-top: 20px;
+}
+#copyrightfooter a {
+	color: rgb(153, 153, 153);
+}
+#copyrightfooter a:hover {
+	text-decoration: underline;
+}
+#resources-navigationbar .storebutton {
+	border-width: 1px 1px 1px 0px; border-style: solid; border-color: rgb(56, 111, 96); border-radius: 0px 3px 3px 0px; top: 50%; width: 40px; height: 54px; margin-top: -28px; display: block; position: absolute; box-shadow: -28px 0px 40px 0px rgba(0,0,0,0.6); background-color: rgb(28, 86, 64); -webkit-border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; -webkit-box-shadow: -28px 0 40px 0 rgba(0, 0, 0, 0.60); -ms-box-shadow: -28px 0 40px 0 rgba(0, 0, 0, 0.60);
+}
+#resources-navigationbar .storebutton:hover {
+	background-image: radial-gradient(14px at 19px 30px, rgba(255, 255, 190, 0.4), rgba(28, 86, 64, 0.4));
+}
+#resources-navigationbar .storebutton::before {
+	left: 6px; color: rgb(226, 233, 230); font-size: 36px; position: absolute; content: "+"; text-shadow: 0px 0px 7px rgba(255,255,190,0.75); -ms-text-shadow: 0 0 7px rgba(255, 255, 190, 0.75);
+}
+.with-background-glow {
+	box-shadow: 0px 1px 100px 0px rgba(0,0,0,0.5); -webkit-box-shadow: 0 1px 100px 0 rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 1px 100px 0 rgba(0, 0, 0, 0.5);
+}
+#resources .categoriesmenu-inner {
+	width: 300px; height: 100%; position: absolute; background-image: url("../uiareas/Store/media/store_category_bg.png"); background-repeat: repeat-y;
+}
+.hideWhenLoading {
+	opacity: 0;
+}
+.hidden {
+	display: none;
+}
+#resources-header #header-userinfo {
+	color: rgb(204, 204, 204); margin-top: 12px; margin-right: 25px; vertical-align: middle; float: left; position: relative;
+}
+#header-username {
+	padding: 3px 18px 3px 5px; position: relative;
+}
+#header-username img {
+	top: 9px; right: 0px; position: absolute;
+}
+#header-userinfo a {
+	color: rgb(204, 204, 204);
+}
+#resources-header #header-userinfo div {
+	float: left;
+}
+#resources-searcharea {
+	margin-top: 7px; margin-right: 10px; float: right;
+}
+#header-userinfo .usermenu {
+	background: rgba(0, 0, 0, 0.1); padding: 0px 2px 2px; top: 20px; right: -3px; display: none; position: absolute; z-index: 5;
+}
+#header-userinfo .usermenu .usermenu-top {
+	background: rgb(240, 240, 240); width: 100%; height: 3px;
+}
+#header-userinfo .usermenu .usermenu-bottom {
+	background: rgb(240, 240, 240); width: 100%; height: 3px;
+}
+#header-userinfo .usermenu > .usermenu-body {
+	background: rgb(240, 240, 240);
+}
+.high-contrast #header-userinfo .usermenu > .usermenu-body {
+	border: 1px solid blue;
+}
+#header-userinfo .usermenu a {
+	padding: 0px 20px; color: rgb(68, 68, 68); line-height: 25px; display: block; white-space: nowrap; outline-color: rgb(68, 68, 68);
+}
+.high-contrast #header-userinfo .usermenu a {
+	border-bottom-color: blue; border-bottom-width: 1px; border-bottom-style: solid;
+}
+#header-userinfo .usermenu a.active {
+	background: url("../uiareas/Store/media/UserMenuSelect.png") left top; color: rgb(240, 240, 240); text-decoration: none;
+}
+.high-contrast #header-userinfo .usermenu a:focus {
+	text-decoration: underline;
+}
+#skiplinks a {
+	background: url("../uiareas/Store/media/UserMenuSelect.png") left top; padding: 6px 20px; left: -999em; right: auto; color: rgb(240, 240, 240); font-size: 11px; position: absolute;
+}
+#skiplinks a:focus {
+	left: auto; top: 46px; right: 24px;
+}
+#myapps-pane {
+	overflow: hidden;
+}
+#myapps-scroller {
+	overflow: auto; margin-top: 0px;
+}
+#mydesktops-scroller {
+	overflow: auto; margin-top: 0px;
+}
+#myapps-scroller .jspTrackBg {
+	background: none;
+}
+#mydesktops-scroller .jspTrackBg {
+	background: none;
+}
+#myapps-emptyresult {
+	color: rgb(104, 146, 145);
+}
+#myapps-emptyresult p {
+	font-size: 12px; font-weight: bold; margin-top: 10px;
+}
+.store-active#myapps-emptyresult #cannot-add-apps {
+	display: none;
+}
+.store-inactive#myapps-emptyresult #cannot-add-apps {
+	text-align: center;
+}
+.store-inactive#myapps-emptyresult h1 {
+	display: none;
+}
+.store-inactive#myapps-emptyresult #coachingMark {
+	display: none;
+}
+.store-inactive#myapps-emptyresult #cannot-add-apps {
+	margin: 0px; color: white; font-size: 16px; display: block;
+}
+#mydesktops-emptyresult #cannot-use-desktops {
+	margin: 0px; color: white; font-size: 16px; display: block;
+}
+#coachingMark {
+	margin-top: -14px; position: relative;
+}
+#can-add-apps {
+	left: 187px; top: 132px; text-align: center; color: rgb(133, 164, 147); white-space: nowrap; position: absolute;
+}
+#favoriteApps {
+	font-size: 34px;
+}
+.de #favoriteApps {
+	font-size: 26px;
+}
+.ja #favoriteApps {
+	font-size: 26px;
+}
+.fr #favoriteApps {
+	font-size: 21px;
+}
+.es #favoriteApps {
+	font-size: 21px;
+}
+.ru #favoriteApps {
+	font-size: 20px;
+}
+.ko #favoriteApps {
+	font-size: 38px;
+}
+#addYour {
+	font-size: 25px;
+}
+.de #addYour {
+	font-size: 22px;
+}
+.fr #addYour {
+	font-size: 17px;
+}
+.es #addYour {
+	font-size: 17px;
+}
+.ja #addYour {
+	font-size: 16px;
+}
+.ru #addYour {
+	font-size: 15px;
+}
+.myapps-myapp {
+	padding: 8px 14px; width: 108px; height: 106px; text-align: center; vertical-align: top; display: inline-block; position: relative;
+}
+.myapps-icon {
+	margin: 0px auto; border-radius: 3px; border: 1px solid transparent; width: 69px; height: 69px; display: block; box-sizing: border-box; -webkit-border-radius: 3px; -ms-border-radius: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.myapps-icon img {
+	border: 0px currentColor;
+}
+.myapps-icon:focus {
+	outline: 0px; border: 1px solid rgb(92, 132, 115);
+}
+.hovered.myapps-icon {
+	outline: 0px; border: 1px solid rgb(92, 132, 115);
+}
+.high-contrast .myapps-icon:focus {
+	outline: blue dotted 1px;
+}
+.high-contrast .hovered.myapps-icon {
+	outline: blue dotted 1px;
+}
+.myapps-icon:focus {
+	color: white;
+}
+.myapps-status {
+	display: none; position: absolute; cursor: pointer;
+}
+.desktop-notlaunched.resource .myapps-status {
+	left: 60px; top: 67px; width: 17px; height: 18px; display: inline;
+}
+.desktop-notlaunched.resource .myapps-status::before {
+	content: url("../uiareas/Store/media/CitrixDesktop_AvailableGrayDot.png");
+}
+.desktop-launched.resource .myapps-status {
+	left: 60px; top: 67px; width: 17px; height: 18px; display: inline;
+}
+.desktop-launched.resource .myapps-status::before {
+	content: url("../uiareas/Store/media/CitrixDesktop_RunningGreenDot.png");
+}
+.launch-waiting.resource .myapps-status {
+	left: 60px; top: 65px; width: 17px; height: 17px; display: inline;
+}
+.poweroff-waiting.resource .myapps-status {
+	left: 60px; top: 65px; width: 17px; height: 17px; display: inline;
+}
+.assignment-waiting.resource .myapps-status {
+	left: 60px; top: 65px; width: 17px; height: 17px; display: inline;
+}
+.launch-waiting.resource .myapps-status::before {
+	content: url("../uiareas/Store/../../media/washer_sample.gif");
+}
+.poweroff-waiting.resource .myapps-status::before {
+	content: url("../uiareas/Store/../../media/washer_sample.gif");
+}
+.assignment-waiting.resource .myapps-status::before {
+	content: url("../uiareas/Store/../../media/washer_sample.gif");
+}
+.launch-ready.resource .myapps-status {
+	left: 67px; top: 70px; width: 6px; height: 10px; display: inline;
+}
+.launch-ready.resource .myapps-status::before {
+	content: url("../uiareas/Store/../../media/LaunchReady.png");
+}
+.disabled.myapps-myapp > a img {
+	opacity: 0.3;
+}
+.disabled.myapps-myapp .myapps-name {
+	opacity: 0.3;
+}
+.launch-ready.myapps-icon {
+	background: red;
+}
+.myapps-icon .iconImage {
+	width: 42px; height: 42px; padding-top: 13px; margin-left: 13px; vertical-align: bottom; display: block;
+}
+.myapps-icon-background {
+	border-radius: 3px; left: 0px; top: 0px; width: 69px; height: 69px; margin-top: 8px; margin-left: 33.5px; position: absolute; z-index: -1; cursor: pointer; opacity: 0.13; background-color: rgb(209, 209, 209); -webkit-border-radius: 3px; -ms-border-radius: 3px;
+}
+.high-contrast .myapps-icon-background {
+	display: none;
+}
+.myapps-name {
+	margin: 0px auto; text-align: center; color: rgb(204, 204, 204); padding-top: 6px; cursor: pointer;
+}
+.disabled.myapps-myapp img.myapps-statusicon {
+	left: 60px; top: 67px; width: 17px; height: 18px; display: inline; position: absolute;
+}
+.myapps-removebutton {
+	left: 0px; top: 0px; width: 20px; height: 20px; display: none; position: absolute;
+}
+.myapps-removehotspot {
+	left: 26px; top: 2px; width: 34px; height: 34px; position: absolute; cursor: pointer;
+}
+.hidden.myapps-myapp {
+	visibility: hidden;
+}
+#ruler-container {
+	background: green; width: 108px; height: 80px; color: black; visibility: hidden; position: absolute; z-index: 1;
+}
+#app-directory-path {
+	margin: 0px; padding: 2px 0px 10px 22px; width: 100%; list-style-type: none;
+}
+#app-directory-path li {
+	color: red; font-weight: bold; display: inline;
+}
+#app-directory-path li a {
+	color: red; margin-right: 5px;
+}
+#app-directory-path ul {
+	margin: 0px; padding: 0px;
+}
+#app-directory-path div {
+	clear: both; display: inline-block;
+}
+.myapps-myfolder {
+	padding: 8px 14px; width: 108px; height: 106px; text-align: center; vertical-align: top; display: inline-block; position: relative;
+}
+#myapps-container {
+	margin-left: 22px;
+}
+#app-directory-path li a {
+	overflow: hidden; display: inline-block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 300px; -moz-text-overflow: ellipsis;
+}
+#app-directory-path li span {
+	overflow: hidden; display: inline-block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 300px; -moz-text-overflow: ellipsis;
+}
+#app-directory-path li img {
+	padding-top: 3px; vertical-align: top;
+}
+#app-directory-path li.last-breadcrumb-link {
+	vertical-align: top;
+}
+#appshortcuts-heading {
+	margin: 30px 0px 0px; text-align: center; color: white; font-size: 18px;
+}
+#appshortcuts-padder {
+	padding: 30px 40px; margin-right: auto; margin-left: auto; max-width: 680px;
+}
+#appshortcuts-outer-container {
+	padding: 5px 2px; border-radius: 5px; width: 100%; background-color: rgba(255, 255, 255, 0.12);
+}
+#appshortcuts-scroller {
+	width: 100%; overflow: auto;
+}
+#appshortcuts-scroller .jspTrackBg {
+	background: none;
+}
+#appshortcuts-inner-container {
+	padding: 0px 20px 0px 10px; color: white;
+}
+#appshortcuts-inner-container h2 {
+	font-size: 16px; font-weight: normal; margin-bottom: 5px;
+}
+.appshortcuts-table {
+	width: 100%; padding-bottom: 10px; padding-left: 20px;
+}
+.appshortcuts-table td {
+	padding: 4px 0px;
+}
+.appshortcuts-table .resource-icon-cell {
+	width: 25px;
+}
+.appshortcuts-table .resource-icon {
+	width: 20px; height: 20px; vertical-align: middle;
+}
+.appshortcuts-table .resource-name-cell {
+	width: 245px;
+}
+.appshortcuts-table .shortcut-url-textbox {
+	padding: 2px; border-radius: 3px; width: 100%; color: rgb(136, 136, 136); box-sizing: border-box; background-color: rgb(226, 227, 227); -moz-box-sizing: border-box;
+}
+.appshortcuts-table .shortcut-url-textbox:focus {
+	color: black; background-color: rgb(245, 246, 246);
+}
+#no-app-shortcuts-message {
+	margin: 0px; color: white; font-size: 16px; display: block;
+}
+#logon-choices-description {
+	color: white; font-size: 16px; margin-top: 74px;
+}
+#logonbox-choices {
+	width: 440px; padding-left: 40px;
+}
+#logonbox-choices .button {
+	margin: 12px 0px 14px;
+}
+#logonbox-choices p {
+	margin: 2px 0px; color: white;
+}
+#auth-failure {
+	color: white; font-size: 16px; margin-top: 74px;
+}
+#use-another-option {
+	margin: 10px 0px 0px 123px; display: block;
+}
+.es #use-another-option {
+	margin-left: 133px;
+}
+.de #use-another-option {
+	margin-left: 133px;
+}
+.ja #use-another-option {
+	margin-left: 133px;
+}
+.fr #use-another-option {
+	margin-left: 163px;
+}
+.ru #use-another-option {
+	margin-left: 163px;
+}
+.logon-failed-link {
+	color: white; text-decoration: underline;
+}
+.logon-failed-link:active {
+	color: white; text-decoration: underline;
+}
+.logon-failed-link:visited {
+	color: white; text-decoration: underline;
+}
+.logon-choice-link {
+	color: white;
+}
+.logon-choice-link:active {
+	color: white;
+}
+.logon-choice-link:visited {
+	color: white;
+}
+.logon-choice-link:hover {
+	text-decoration: underline;
+}
+#remember-logon-method {
+	text-align: center;
+}
+#remember-logon-method input {
+	vertical-align: middle;
+}
+#remember-logon-method label {
+	vertical-align: middle;
+}
+#credentialupdate {
+	width: 100%; height: 100%;
+}
+#authentication {
+	width: 100%; height: 100%;
+}
+#credentialupdate-topshadow {
+	background: url("../uiareas/Authentication/../../media/Screen_shadow_top.png") no-repeat; margin: 0px auto; top: 205px; width: 1009px; height: 15px; position: relative;
+}
+#logonbelt-topshadow {
+	background: url("../uiareas/Authentication/../../media/Screen_shadow_top.png") no-repeat; margin: 0px auto; top: 205px; width: 1009px; height: 15px; position: relative;
+}
+#credentialupdate-container {
+	margin: auto; top: 205px; position: relative; z-index: 1; min-height: 230px; min-width: 654px;
+}
+#logonbox-container {
+	margin: auto; top: 205px; position: relative; z-index: 1; min-height: 230px; min-width: 654px;
+}
+#credentialupdate-innerbox {
+	background: url("../uiareas/Authentication/media/Screen_SemiTranslucent.png"); width: 100%; height: 242px; border-left-color: rgb(14, 117, 92); border-left-width: 9px; border-left-style: solid; display: table;
+}
+#logonbox-innerbox {
+	background: url("../uiareas/Authentication/media/Screen_SemiTranslucent.png"); width: 100%; height: 242px; border-left-color: rgb(14, 117, 92); border-left-width: 9px; border-left-style: solid; display: table;
+}
+.high-contrast #credentialupdate-innerbox {
+	border: currentColor; padding-left: 9px;
+}
+.high-contrast #logonbox-innerbox {
+	border: currentColor; padding-left: 9px;
+}
+#credentialupdate-logoarea {
+	width: 38%; color: white; font-size: 13px; display: table-cell;
+}
+#logonbox-logoarea {
+	width: 38%; color: white; font-size: 13px; display: table-cell;
+}
+#credentialupdate-logoimage {
+	background: url("../uiareas/Authentication/media/logo_notagline.png") no-repeat; border: 0px currentColor; top: 92px; width: 215px; height: 51px; right: 71%; float: right; position: absolute;
+}
+#logonbox-logoimage {
+	background: url("../uiareas/Authentication/media/logo_notagline.png") no-repeat; border: 0px currentColor; top: 92px; width: 215px; height: 51px; right: 71%; float: right; position: absolute;
+}
+.high-contrast #credentialupdate-logoimage::before {
+	content: url("../uiareas/Authentication/media/logo_notagline_blackbg.png");
+}
+.high-contrast #logonbox-logoimage::before {
+	content: url("../uiareas/Authentication/media/logo_notagline_blackbg.png");
+}
+#credentialupdate-bottomshadow {
+	background: url("../uiareas/Authentication/../../media/Screen_shadow_bottom.png") no-repeat; margin: 205px auto 0px; width: 1009px; height: 15px; bottom: 0px; position: relative;
+}
+#logonbelt-bottomshadow {
+	background: url("../uiareas/Authentication/../../media/Screen_shadow_bottom.png") no-repeat; margin: 205px auto 0px; width: 1009px; height: 15px; bottom: 0px; position: relative;
+}
+#credentialupdate-form {
+	padding: 70px 47px 70px 40px;
+}
+#logonbox-logonform {
+	padding: 70px 47px 70px 40px;
+}
+.logonbox-scroller {
+	width: 383px;
+}
+#logonbox-logonform .jspTrackBg {
+	background: none;
+}
+.credentialform .field {
+	padding: 6px 0px 10px; color: rgb(102, 102, 102); clear: both;
+}
+.credentialform .field .left {
+	padding-top: 3px; float: left;
+}
+.credentialform .field .right {
+	float: right;
+}
+form.credentialform {
+	margin: 0px; width: 330px; text-align: left; vertical-align: middle;
+}
+#changepassword-dialog form.credentialform {
+	margin: 0px auto;
+}
+form.credentialform h1 {
+	color: white; font-size: 16px;
+}
+.credentialform .error {
+	margin: 0px 0px 11px 145px; text-align: left; color: white; vertical-align: middle; position: relative;
+}
+.credentialform .warning {
+	margin: 0px 0px 11px 145px; text-align: left; color: white; vertical-align: middle; position: relative;
+}
+.credentialform .information {
+	margin: 0px 0px 11px 145px; text-align: left; color: white; vertical-align: middle; position: relative;
+}
+.credentialform .inprogress {
+	margin: 0px 0px 11px 145px; text-align: left; color: white; vertical-align: middle; position: relative;
+}
+.credentialform .confirmation {
+	margin: 0px 0px 11px 145px; text-align: left; color: white; vertical-align: middle; position: relative;
+}
+.credentialform .plain {
+	margin: 0px 0px 11px 145px; text-align: left; color: white; vertical-align: middle; position: relative;
+}
+.credentialform .field .centerLayout {
+	margin: 0px auto; text-align: center; vertical-align: middle; float: none;
+}
+.credentialform .field .centerLayout .noMargin.error.label {
+	margin: 0px auto; width: 280px; text-align: center; vertical-align: middle;
+}
+.credentialform .field .centerLayout .noMargin.warning.label {
+	margin: 0px auto; width: 280px; text-align: center; vertical-align: middle;
+}
+.credentialform .field .centerLayout .noMargin.information.label {
+	margin: 0px auto; width: 280px; text-align: center; vertical-align: middle;
+}
+.credentialform .field .centerLayout .noMargin.inprogress.label {
+	margin: 0px auto; width: 280px; text-align: center; vertical-align: middle;
+}
+.credentialform .field .centerLayout .noMargin.confirmation.label {
+	margin: 0px auto; width: 280px; text-align: center; vertical-align: middle;
+}
+.credentialform .field .centerLayout .noMargin.plain.label {
+	margin: 0px auto; width: 280px; text-align: center; vertical-align: middle;
+}
+.credentialform .plain {
+	margin-bottom: 8px; margin-left: 0px;
+}
+.credentialform .confirmationButton.buttonscontainer {
+	margin: 4px 26px 0px 0px; width: 169px;
+}
+.credentialform .field .spinner {
+	margin: 0px 0px 0px 34px;
+}
+.credentialform .title {
+	text-align: left; color: white; font-size: 16px; vertical-align: middle;
+}
+form.insertPoint .inlineSpinner {
+	display: inline-block;
+}
+.credentialform .error::before {
+	left: -22px; position: absolute;
+}
+.credentialform .warning::before {
+	left: -22px; position: absolute;
+}
+.credentialform .information::before {
+	left: -22px; position: absolute;
+}
+.credentialform .confirmation::before {
+	left: -22px; position: absolute;
+}
+.credentialform .inprogress::before {
+	left: -22px; position: absolute;
+}
+.credentialform .informationAssistive {
+	padding-top: 2px; padding-left: 7px; position: absolute; cursor: pointer;
+}
+.credentialform .warning::before {
+	content: url("../uiareas/Authentication/media/warning.png");
+}
+.credentialform .information::before {
+	content: url("../uiareas/Authentication/media/info.png");
+}
+.credentialform .error::before {
+	content: url("../uiareas/Authentication/media/error.png");
+}
+.credentialform .confirmation::before {
+	content: url("../uiareas/Authentication/media/tick.png");
+}
+.credentialform .field .checkbox {
+	margin: 0px 0px 5px; width: 206px;
+}
+.credentialform .field .checkbox input {
+	margin: 0px; vertical-align: middle;
+}
+.credentialform .field .checkbox label {
+	margin-left: 3px; vertical-align: middle;
+}
+.fr .credentialform {
+	width: 370px;
+}
+.ru .credentialform {
+	width: 370px;
+}
+.fr .credentialform .confirmation {
+	margin-left: 187px;
+}
+.fr .credentialform .error {
+	margin-left: 187px;
+}
+.fr .credentialform .information {
+	margin-left: 187px;
+}
+.ru .credentialform .confirmation {
+	margin-left: 187px;
+}
+.ru .credentialform .error {
+	margin-left: 187px;
+}
+.ru .credentialform .information {
+	margin-left: 187px;
+}
+.es .credentialform {
+	width: 340px;
+}
+.de .credentialform {
+	width: 340px;
+}
+.ja .credentialform {
+	width: 340px;
+}
+.es .credentialform .confirmation {
+	margin-left: 154px;
+}
+.es .credentialform .error {
+	margin-left: 154px;
+}
+.es .credentialform .information {
+	margin-left: 154px;
+}
+.de .credentialform .confirmation {
+	margin-left: 154px;
+}
+.de .credentialform .error {
+	margin-left: 154px;
+}
+.de .credentialform .information {
+	margin-left: 154px;
+}
+.ja .credentialform .confirmation {
+	margin-left: 154px;
+}
+.ja .credentialform .error {
+	margin-left: 154px;
+}
+.ja .credentialform .information {
+	margin-left: 154px;
+}
+.credentialform label {
+	color: white; font-size: 12px;
+}
+.credentialform input[type=text] {
+	padding: 2px 0px 2px 10px;  width: 197px; height: 25px; color: rgb(85, 85, 85); font-size: 12px; 
+	
+}
+.credentialform input[type=password] {
+	padding: 2px 0px 2px 10px;  width: 197px; height: 25px; color: rgb(85, 85, 85); font-size: 12px;
+}
+.credentialform label.disabled {
+	color: rgb(153, 153, 153);
+}
+.isIE .credentialform input[type=text] {
+	line-height: 25px;
+}
+.isIE .credentialform input[type=password] {
+	line-height: 25px;
+}
+.high-contrast .credentialform input[type=text] {
+	outline: blue solid 1px;
+}
+.high-contrast .credentialform input[type=password] {
+	outline: blue solid 1px;
+}
+.credentialform input[type=text]:focus {
+	color: black; background-image: url("../uiareas/Authentication/media/Chrome_field_hilight.png");
+}
+.credentialform input[type=password]:focus {
+	color: black; background-image: url("../uiareas/Authentication/media/Chrome_field_hilight.png");
+}
+.credentialform input[type=text][disabled] {
+	color: rgb(85, 85, 85); background-image: url("../uiareas/Authentication/media/Chrome_field_normal.png");
+}
+.credentialform input[type=password][disabled] {
+	color: rgb(85, 85, 85); background-image: url("../uiareas/Authentication/media/Chrome_field_normal.png");
+}
+.credentialform .inlineAssistiveText {
+	line-height: 25px; overflow: hidden; font-style: italic; white-space: nowrap; position: absolute; z-index: -1; -ms-text-overflow: ellipsis;
+}
+.credentialform .inlineAssistiveText {
+	padding: 2px 0px 2px 10px; border: 0px currentColor; width: 197px; height: 25px; color: rgb(85, 85, 85); font-size: 12px; background-color: transparent;
+}
+.credentialform .imageLayer {
+	padding: 2px 0px 2px 10px; border: 0px currentColor; width: 197px; height: 25px; color: rgb(85, 85, 85); font-size: 12px; background-color: transparent;
+}
+.credentialform .imageLayer {
+	position: relative; z-index: -2; background-image: url("../uiareas/Authentication/media/Chrome_field_normal.png"); background-repeat: no-repeat;
+}
+.credentialform select {
+	padding: 2px 2px 2px 5px; border-radius: 3px; border: 1px solid rgb(226, 227, 227); width: 204px; height: 25px; color: rgb(85, 85, 85); margin-top: 1px; margin-right: 2px;
+}
+.high-contrast select#domain {
+	width: 209px; margin-right: -1px;
+}
+.credentialform select[multiple=multiple] {
+	height: auto;
+}
+.credentialform select:focus {
+	color: black; background-color: white;
+}
+.credentialform .buttonscontainer {
+	width: 207px;
+}
+.credentialform .buttonsrow .button {
+	float: left; display: block;
+}
+.credentialform .radioButtons {
+	width: 207px; float: right;
+}
+.credentialform .radioButtons label {
+	display: inline;
+}
+.logofferrors {
+	margin: 30px auto; font-size: 12px;
+}
+.logoff-errormessage {
+	text-align: center; margin-top: 10px;
+}
