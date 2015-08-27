@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
-import com.verizon.cab.management.domain.Album;
+import com.verizon.dispatch.route.domain.Album;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
