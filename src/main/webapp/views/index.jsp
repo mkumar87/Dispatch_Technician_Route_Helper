@@ -40,13 +40,32 @@ Email: <A href="mailto:VDSI@one.verizon.com">vdsi@gmail.com</A><BR>
 <div class="layout" style="float:left;display:inline;">
 <table style="width:100%;">
 	<tr>
-		<td style="width:30%;"> 
+	
+		<td style="width:60%;">
+			<div class="block" >
+			<h1>Verizon Dispatch Technician Route Planner</h1><br>
+			Dear All, Dispatchers are communications personnel responsible for receiving and 
+			transmitting pure and reliable messages, tracking vehicles and equipment, and 
+			recording other important information.A number of organizations, including telecom 
+			services,police and fire departments, emergency medical services, taxicab providers, 
+			trucking companies,railroads, and public utility companies, use dispatchers to relay 
+			information and coordinate their operations. 
+			
+			Essentially, the dispatcher is the "conductor" of the force, and is responsible for 
+			the direction of all units within it.
+			<br><br>
+			****** TIME IS PRECIOUS. USE IT EFFECTIVELY ***********************
+			<br>
+			
+		</td>
+		
+		<td style="width:40%;"> 
 		
 			<div class="login-content" >
 
 			<div class="signin-block">
 			<div class="login-text"><font color=red><%=message%></font></div>
-			<div class="login-text">Sign in with your Emp ID and
+			<div class="login-text">Sign in with your User Id and
 			Password.</div>
 			
 			<div id="logonbox-container">
@@ -81,28 +100,7 @@ Email: <A href="mailto:VDSI@one.verizon.com">vdsi@gmail.com</A><BR>
 			</div>
 			</div>
 			</div>
-			
-			
-			<!-- Start Quick Links  -->
-			
-			<!-- End Quick Links -->
-		</td>
-	
-		<td style="width:70%;">
-			<div class="block" >
-			<h1>Verizon Dispatch Technician System</h1><br>
-			Dear All, Dispatchers are communications personnel responsible for receiving and 
-			transmitting pure and reliable messages, tracking vehicles and equipment, and 
-			recording other important information.A number of organizations, including telecom 
-			services,police and fire departments, emergency medical services, taxicab providers, 
-			trucking companies,railroads, and public utility companies, use dispatchers to relay 
-			information and coordinate their operations. 
-			
-			Essentially, the dispatcher is the "conductor" of the force, and is responsible for 
-			the direction of all units within it.
-			<br>
-			
-			
+
 		</td>
 	</tr>
 </table>
