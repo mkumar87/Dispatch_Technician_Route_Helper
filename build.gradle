@@ -66,10 +66,10 @@ apply plugin: 'cloudfoundry'
 
 cloudfoundry {
 	target = "https://api.run.pivotal.io"
-	organization = "BGW Hackathon"
+	organization = "Rockers"
 	space = "development"
-	username = System.getenv()['CF_USERNAME']
-	password = System.getenv()['CF_PASSWD']
+	username = "mkumar87@gmail.com"
+	password = "Mylife12"
 	file = file("target/com.verizon.dispatch-1.0.0.war")
 	host = "dispatch"
 	domain = "cfapps.io"
