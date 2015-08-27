@@ -77,7 +77,7 @@ cloudfoundry {
 	instances = 1
 
 	services {
-		'dev-mongodb' {
+		'mongodb' {
 			label = 'mongodb'
 			provider = 'mongolab'
 			version = 'n/a'
