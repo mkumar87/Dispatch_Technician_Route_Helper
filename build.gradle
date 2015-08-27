@@ -70,7 +70,7 @@ cloudfoundry {
 	space = "development"
 	username = "mkumar87@gmail.com"
 	password = "Mylife12"
-	file = file("target/com.verizon.dispatch-1.0.0.war")
+	file = file("target/verizon-dispatch-scheduler-1.0.0.war")
 	host = "dispatch"
 	domain = "cfapps.io"
 	memory = 512
