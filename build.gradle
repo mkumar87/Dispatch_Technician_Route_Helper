@@ -84,13 +84,6 @@ cloudfoundry {
 			plan = 'sandbox'
 			bind = true
 		}
-		'dev-sendgrid' {
-			label = 'sendgrid'
-			provider = 'sendgrid'
-			version = 'n/a'
-			plan = 'sandbox'
-			bind = true
-		}
 	}
 
 	variants = ['-blue', '-green']
