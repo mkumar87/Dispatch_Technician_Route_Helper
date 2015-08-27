@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.index.GeoSpatialIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
-public class UserRoute {  
+public class TechRoute {  
 	
   @Id
   private String id;
