@@ -2,10 +2,10 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'war'
 
-group = 'com.verizon.cab'
+group = 'com.verizon.dispatch'
 version = '1.0.0'
 
-description = """verizon-car-pooling"""
+description = """verizon-dispatch-scheduler"""
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
@@ -70,8 +70,8 @@ cloudfoundry {
 	space = "development"
 	username = System.getenv()['CF_USERNAME']
 	password = System.getenv()['CF_PASSWD']
-	file = file("target/verizon-car-pooling-1.0.0.war")
-	host = "vdsi-cab-pooling"
+	file = file("target/com.verizon.dispatch-1.0.0.war")
+	host = "dispatch"
 	domain = "cfapps.io"
 	memory = 512
 	instances = 1

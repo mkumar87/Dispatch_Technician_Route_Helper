@@ -5,12 +5,12 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.verizon.cab</groupId>
-	<artifactId>verizon-car-pooling</artifactId>
+	<groupId>com.verizon.dispatch</groupId>
+	<artifactId>verizon-dispatch-scheduler</artifactId>
 	<version>1.0.0</version>
 
-	<name>verizon-car-pooling</name>
-	<description>Verizon Car Pooling Application </description>
+	<name>verizon-dispatch-scheduler</name>
+	<description>Verizon Dispatch Scheduler</description>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -276,18 +276,14 @@
 				<artifactId>cf-maven-plugin</artifactId>
 				<version>1.1.2</version>
 				<configuration>
-					<!-- <server>cloud-foundry-credentials</server> <username>${env.CF_LOGIN}</username> 
-						<password>${env.CF_PASSWD}</password> <target>https://api.run.pivotal.io</target> 
-						<org>pavan.akurathi-org</org> <space>development</space> <appname>CarPoolingV2-app</appname> 
-						<url>CarPoolingV2-app.cfapps.io</url> <memory>512</memory> <instances>1</instances> -->
 					<server>cloud-foundry-credentials</server>
 					<username>${env.CF_LOGIN}</username>
 					<password>${env.CF_PASSWD}</password>
 					<target>https://api.run.pivotal.io</target>
-					<org>pavan.akurathi-org</org>
+					<org>Rockers</org>
 					<space>development</space>
-					<appname>GREEN CarPooling</appname>
-					<url>CarPoolingGreen-app.cfapps.io</url>
+					<appname>Dispatch Scheduler</appname>
+					<url>dispatch.cfapps.io</url>
 					<memory>512</memory>
 					<instances>1</instances>
 
@@ -306,42 +302,6 @@
 					</services>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.cloudfoundry</groupId>
-				<artifactId>cf-maven-plugin</artifactId>
-				<version>1.1.2</version>
-				<configuration>
-
-					<server>cloud-foundry-credentials</server>
-					<username>${env.CF_LOGIN}</username>
-					<password>${env.CF_PASSWD}</password>
-					<target>https://api.run.pivotal.io</target>
-					<org>pavan.akurathi-org</org>
-					<space>development</space>
-					<appname>BLUE CarPooling</appname>
-					<url>CarPoolingBlue-app.cfapps.io</url>
-					<memory>512</memory>
-					<instances>1</instances>
-					<env>
-						<SAMPLE_TEST>WINTER_FELL</SAMPLE_TEST>
-					</env>
-					<services>
-						<service>
-							<name>dev-mongodb</name>
-							<label>mongodb</label>
-							<provider>MongoLab</provider>
-							<version>2.6.9</version>
-							<plan>Sandbox</plan>
-						</service>
-					</services>
-				</configuration>
-			</plugin>
-			<!-- <plugin> <groupId>org.apache.tomcat.maven</groupId> <artifactId>tomcat7-maven-plugin</artifactId> 
-				<version>2.0</version> <executions> <execution> <id>tomcat-run</id> <goals> 
-				<goal>run-war-only</goal> </goals> <phase>pre-integration-test</phase> <configuration> 
-				<port>8080</port> <fork>true</fork> </configuration> </execution> <execution> 
-				<id>tomcat-shutdown</id> <goals> <goal>shutdown</goal> </goals> <phase>post-integration-test</phase> 
-				</execution> </executions> </plugin> -->
 		</plugins>
 	</build>
 </project>
