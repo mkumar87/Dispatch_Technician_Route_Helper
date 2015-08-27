@@ -3,12 +3,12 @@ script:
 - mvn validate clean compile package verify
 sudo : true
 deploy:
-edge: true
-skip_cleanup: true
-provider: cloudfoundry
-username: mkumar87@gmail.com
-password: Mylife12
-api: https://api.run.pivotal.io
-organization: Rockers
-manifest: manifest.yml
-space: development
+   edge: true
+   skip_cleanup: true
+   provider: cloudfoundry
+   username: mkumar87@gmail.com
+   password: Mylife12
+   api: https://api.run.pivotal.io
+   organization: Rockers
+   manifest: manifest.yml
+   space: development
