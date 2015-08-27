@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.verizon.dispatch.route.domain.User;
-import com.verizon.dispatch.route.domain.UserRoute;
+import com.verizon.dispatch.route.domain.TechRoute;
 import com.verizon.dispatch.route.repositories.mongodb.DispatchRepository;
 import com.verizon.dispatch.route.repositories.mongodb.TechRouteRepository;
 import com.verizon.dispatch.route.util.CommonUtil;
