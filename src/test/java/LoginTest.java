@@ -19,8 +19,7 @@ public class LoginTest {
 	        // Get the first page
 	        final HtmlPage page1 = webClient.getPage("http://localhost:8080/");
 
-	        // Get the form that we are dealing with and within that form, 
-	        // find the submit button and the field that we want to change.
+
 	        final HtmlForm form = page1.getFormByName("loginForm");
 
 	        final HtmlSubmitInput button = form.getInputByName("loginBtn");
