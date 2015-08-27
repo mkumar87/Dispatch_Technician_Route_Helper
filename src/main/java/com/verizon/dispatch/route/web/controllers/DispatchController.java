@@ -27,7 +27,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.verizon.dispatch.route.domain.User;
 import com.verizon.dispatch.route.domain.UserRoute;
 import com.verizon.dispatch.route.repositories.mongodb.DispatchRepository;
-import com.verizon.dispatch.route.repositories.mongodb.UserRouteRepository;
+import com.verizon.dispatch.route.repositories.mongodb.TechRouteRepository;
 import com.verizon.dispatch.route.util.CommonUtil;
 
 /**
