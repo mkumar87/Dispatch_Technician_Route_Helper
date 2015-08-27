@@ -23,7 +23,7 @@ String message = request.getAttribute("message")!=null?(String)request.getAttrib
 <div class="layout">
 <div class="VZlogo"><IMG title="Verizon" alt="Verizon" style="margin-left: -18px;"
 	src="resources/VerizonLogo.png" width = "110%" height = "110%" ></div>
-<div class="app-name">Dispatch Technician</div>
+<div class="app-name">Dispatch Technician Route Planner</div>
 <div class="app-support">&nbsp;<BR>
 Email: <A href="mailto:VDSI@one.verizon.com">vdsi@gmail.com</A><BR>
 &nbsp;<BR>
@@ -84,8 +84,7 @@ Email: <A href="mailto:VDSI@one.verizon.com">vdsi@gmail.com</A><BR>
 				spellcheck="false" type="password" autocomplete="off"></div>
 			</div>
 			<div class="field buttonsrow">
-			<div class="right"><a class="button"
-				id="createBtn" href="createNewUser">New User</a></div>
+
 			<div class="right"><a class="button"
 				id="loginBtn"  onkeypress="login();" onclick= "login();" >Log On</a></div>
 			</div>
