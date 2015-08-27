@@ -1,0 +1,5 @@
+---
+applications:
+- name: Dispatch_Technician_Route_Helper
+instances: 1
+path: /home/travis/build/mkumar87/Dispatch_Technician_Route_Helper/target/verizon-dispatch-scheduler-1.0.0.war
