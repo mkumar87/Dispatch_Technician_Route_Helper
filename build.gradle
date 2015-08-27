@@ -88,3 +88,4 @@ cloudfoundry {
 
 	variants = ['-blue', '-green']
 }
+
