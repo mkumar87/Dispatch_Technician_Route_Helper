@@ -144,7 +144,7 @@
 									marker1 = new google.maps.Marker(
 									{
 										map : map,
-										draggable : true,
+				 						draggable : true,
 										animation : google.maps.Animation.BOUNCE,
 										title : place.name,
 										position : place.geometry.location

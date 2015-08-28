@@ -305,102 +305,102 @@ public class DispatchController {
 			}
 		}
 		
-		@RequestMapping(value = "/submitRequest", method = RequestMethod.POST)
-		public String submitRequest(@RequestParam("userId") String userId,
-				@RequestParam("avlVehicleChk") String avlVehicleChk,
-				Model model) {
-			
-			if(userId!=null)
-			{
-				User user = dispatchRepository.findOne(userId);
-				String prevProviderUserId = user.getProviderUserId();
-				if(prevProviderUserId!=null && !prevProviderUserId.equals(avlVehicleChk))
-				{
-					User prevProvider = dispatchRepository.findOne(user.getProviderUserId());
-					prevProvider.setPickCount(prevProvider.getPickCount()>0?prevProvider.getPickCount()-1:0);
-					prevProvider.setAvailableCount(prevProvider.getVehicleCapacity()-prevProvider.getPickCount());
-					dispatchRepository.save(prevProvider);
-					// send email to old provider that user de-tagged from his pool
-					String emailBody = EmailTemplate.TEXT_CAR_POOL_DROPPED_PROVIDER.replace(EmailTemplate.RECEIPIENT, prevProvider.getFirstName())
-							.replace(EmailTemplate.FIRST_NAME, user.getFirstName()).replace(EmailTemplate.LAST_NAME, user.getLastName())
-							.replace(EmailTemplate.MOBILE, user.getPhoneNumber()).replace(EmailTemplate.EMAIL, user.getEmail())
-							.replace(EmailTemplate.ADDRESS, user.getAddressDesc());
-					logger.info("SENDING EMAIL");
-					CommonUtil.sendEmail(prevProvider.getEmail(),EmailTemplate.SUB_CAR_POOL_DROPPED_PROVIDER, emailBody);
-					// send email to the user that he is de-tagged from his current pool
-					emailBody = EmailTemplate.TEXT_CAR_POOL_DROPPED_USER.replace(EmailTemplate.RECEIPIENT, user.getFirstName())
-							.replace(EmailTemplate.FIRST_NAME, prevProvider.getFirstName()).replace(EmailTemplate.LAST_NAME, prevProvider.getLastName())
-							.replace(EmailTemplate.MOBILE, prevProvider.getPhoneNumber()).replace(EmailTemplate.EMAIL, prevProvider.getEmail())
-							.replace(EmailTemplate.ADDRESS, prevProvider.getAddressDesc());
-					logger.info("SENDING EMAIL");
-					CommonUtil.sendEmail(user.getEmail(),EmailTemplate.SUB_CAR_POOL_DROPPED_USER, emailBody);
-				}
-				user.setProviderUserId(avlVehicleChk);
-				dispatchRepository.save(user);
-				model.addAttribute("empid", userId);
-				model.addAttribute("firstname", user.getFirstName());
-				model.addAttribute("lastname", user.getLastName());
-				model.addAttribute("email", user.getEmail());
-				model.addAttribute("zipcode", String.valueOf(user.getZipCode()));
-				model.addAttribute("status", user.getIsEnrolled());
-				Date startDate = user.getStartDate();
-				if(startDate!=null)
-				{
-					SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy~HH:mm");
-					String sd = sdf.format(startDate);
-					model.addAttribute("startDate", sd.split("~")[0]);
-					model.addAttribute("startTimeHr", sd.split("~")[1].split(":")[0]);
-					model.addAttribute("startTimeMin", sd.split("~")[1].split(":")[1]);
-				}			
-				model.addAttribute("addressDesc", user.getAddressDesc());
-				model.addAttribute("poolType", user.getPoolMode());
-				model.addAttribute("vehicleType", user.getVehicleType());
-				model.addAttribute("capacity", String.valueOf(user.getVehicleCapacity()));
-				if(user.getProviderUserId()!=null)
-				{				
-					User providerUser = dispatchRepository.findOne(user.getProviderUserId());
-					if(prevProviderUserId ==null)
-						prevProviderUserId = "";
-					if(!prevProviderUserId.equals(avlVehicleChk))
-					{
-						providerUser.setPickCount(providerUser.getPickCount()+1);	
-						providerUser.setAvailableCount(providerUser.getVehicleCapacity()-providerUser.getPickCount());
-						dispatchRepository.save(providerUser);
-						// send email to new provider that user tagged to his pool
-						String emailBody = EmailTemplate.TEXT_CAR_POOL_ENROLLED_PROVIDER.replace(EmailTemplate.RECEIPIENT, providerUser.getFirstName())
-								.replace(EmailTemplate.FIRST_NAME, user.getFirstName()).replace(EmailTemplate.LAST_NAME, user.getLastName())
-								.replace(EmailTemplate.MOBILE, user.getPhoneNumber()).replace(EmailTemplate.EMAIL, user.getEmail())
-								.replace(EmailTemplate.ADDRESS, user.getAddressDesc());
-						logger.info("SENDING EMAIL");
-						CommonUtil.sendEmail(providerUser.getEmail(),EmailTemplate.SUB_CAR_POOL_ENROLLED_PROVIDER, emailBody);
-						// send email to the user that he is de-tagged from his current pool
-						emailBody = EmailTemplate.TEXT_CAR_POOL_ENROLLED_USER.replace(EmailTemplate.RECEIPIENT, user.getFirstName())
-								.replace(EmailTemplate.FIRST_NAME, providerUser.getFirstName()).replace(EmailTemplate.LAST_NAME, providerUser.getLastName())
-								.replace(EmailTemplate.MOBILE, providerUser.getPhoneNumber()).replace(EmailTemplate.EMAIL, providerUser.getEmail())
-								.replace(EmailTemplate.ADDRESS, providerUser.getAddressDesc());
-						CommonUtil.sendEmail(user.getEmail(),EmailTemplate.SUB_CAR_POOL_ENROLLED_USER, emailBody);
-						logger.info("SENDING EMAIL");
-					}
-					StringBuilder providers = new StringBuilder();					
-					providers.append("[");
-					providers.append("['").append(providerUser.getFirstName()).append(" ").append(providerUser.getLastName()).append("',")
-							.append(providerUser.getLocation()[1]).append(",").append(providerUser.getLocation()[0]).append(",'").append("P").append("']");									
-					providers.append("]"); 
-					model.addAttribute("others", providers.toString());
-					String currentPool = providerUser.getFirstName()+ " "+providerUser.getLastName()+" | "+providerUser.getPhoneNumber()+" | "+providerUser.getEmail();
-					model.addAttribute("currentPool",currentPool);	
-				}
-				double[] geoData = user.getLocation();		
-				if(geoData!=null && geoData.length == 2)
-					model.addAttribute("location", (String.valueOf(geoData[1])+","+String.valueOf(geoData[0])));								
-				return "poolingRequest";			
-			}
-			else
-			{
-				model.addAttribute("message", "Session expired!! please login again");
-				return "index";
-			}
-		}
+//		@RequestMapping(value = "/submitRequest", method = RequestMethod.POST)
+//		public String submitRequest(@RequestParam("userId") String userId,
+//				@RequestParam("avlVehicleChk") String avlVehicleChk,
+//				Model model) {
+//			
+//			if(userId!=null)
+//			{
+//				User user = dispatchRepository.findOne(userId);
+//				String prevProviderUserId = user.getProviderUserId();
+//				if(prevProviderUserId!=null && !prevProviderUserId.equals(avlVehicleChk))
+//				{
+//					User prevProvider = dispatchRepository.findOne(user.getProviderUserId());
+//					prevProvider.setPickCount(prevProvider.getPickCount()>0?prevProvider.getPickCount()-1:0);
+//					prevProvider.setAvailableCount(prevProvider.getVehicleCapacity()-prevProvider.getPickCount());
+//					dispatchRepository.save(prevProvider);
+//					// send email to old provider that user de-tagged from his pool
+//					String emailBody = EmailTemplate.TEXT_CAR_POOL_DROPPED_PROVIDER.replace(EmailTemplate.RECEIPIENT, prevProvider.getFirstName())
+//							.replace(EmailTemplate.FIRST_NAME, user.getFirstName()).replace(EmailTemplate.LAST_NAME, user.getLastName())
+//							.replace(EmailTemplate.MOBILE, user.getPhoneNumber()).replace(EmailTemplate.EMAIL, user.getEmail())
+//							.replace(EmailTemplate.ADDRESS, user.getAddressDesc());
+//					logger.info("SENDING EMAIL");
+//					CommonUtil.sendEmail(prevProvider.getEmail(),EmailTemplate.SUB_CAR_POOL_DROPPED_PROVIDER, emailBody);
+//					// send email to the user that he is de-tagged from his current pool
+//					emailBody = EmailTemplate.TEXT_CAR_POOL_DROPPED_USER.replace(EmailTemplate.RECEIPIENT, user.getFirstName())
+//							.replace(EmailTemplate.FIRST_NAME, prevProvider.getFirstName()).replace(EmailTemplate.LAST_NAME, prevProvider.getLastName())
+//							.replace(EmailTemplate.MOBILE, prevProvider.getPhoneNumber()).replace(EmailTemplate.EMAIL, prevProvider.getEmail())
+//							.replace(EmailTemplate.ADDRESS, prevProvider.getAddressDesc());
+//					logger.info("SENDING EMAIL");
+//					CommonUtil.sendEmail(user.getEmail(),EmailTemplate.SUB_CAR_POOL_DROPPED_USER, emailBody);
+//				}
+//				user.setProviderUserId(avlVehicleChk);
+//				dispatchRepository.save(user);
+//				model.addAttribute("empid", userId);
+//				model.addAttribute("firstname", user.getFirstName());
+//				model.addAttribute("lastname", user.getLastName());
+//				model.addAttribute("email", user.getEmail());
+//				model.addAttribute("zipcode", String.valueOf(user.getZipCode()));
+//				model.addAttribute("status", user.getIsEnrolled());
+//				Date startDate = user.getStartDate();
+//				if(startDate!=null)
+//				{
+//					SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy~HH:mm");
+//					String sd = sdf.format(startDate);
+//					model.addAttribute("startDate", sd.split("~")[0]);
+//					model.addAttribute("startTimeHr", sd.split("~")[1].split(":")[0]);
+//					model.addAttribute("startTimeMin", sd.split("~")[1].split(":")[1]);
+//				}			
+//				model.addAttribute("addressDesc", user.getAddressDesc());
+//				model.addAttribute("poolType", user.getPoolMode());
+//				model.addAttribute("vehicleType", user.getVehicleType());
+//				model.addAttribute("capacity", String.valueOf(user.getVehicleCapacity()));
+//				if(user.getProviderUserId()!=null)
+//				{				
+//					User providerUser = dispatchRepository.findOne(user.getProviderUserId());
+//					if(prevProviderUserId ==null)
+//						prevProviderUserId = "";
+//					if(!prevProviderUserId.equals(avlVehicleChk))
+//					{
+//						providerUser.setPickCount(providerUser.getPickCount()+1);	
+//						providerUser.setAvailableCount(providerUser.getVehicleCapacity()-providerUser.getPickCount());
+//						dispatchRepository.save(providerUser);
+//						// send email to new provider that user tagged to his pool
+//						String emailBody = EmailTemplate.TEXT_CAR_POOL_ENROLLED_PROVIDER.replace(EmailTemplate.RECEIPIENT, providerUser.getFirstName())
+//								.replace(EmailTemplate.FIRST_NAME, user.getFirstName()).replace(EmailTemplate.LAST_NAME, user.getLastName())
+//								.replace(EmailTemplate.MOBILE, user.getPhoneNumber()).replace(EmailTemplate.EMAIL, user.getEmail())
+//								.replace(EmailTemplate.ADDRESS, user.getAddressDesc());
+//						logger.info("SENDING EMAIL");
+//						CommonUtil.sendEmail(providerUser.getEmail(),EmailTemplate.SUB_CAR_POOL_ENROLLED_PROVIDER, emailBody);
+//						// send email to the user that he is de-tagged from his current pool
+//						emailBody = EmailTemplate.TEXT_CAR_POOL_ENROLLED_USER.replace(EmailTemplate.RECEIPIENT, user.getFirstName())
+//								.replace(EmailTemplate.FIRST_NAME, providerUser.getFirstName()).replace(EmailTemplate.LAST_NAME, providerUser.getLastName())
+//								.replace(EmailTemplate.MOBILE, providerUser.getPhoneNumber()).replace(EmailTemplate.EMAIL, providerUser.getEmail())
+//								.replace(EmailTemplate.ADDRESS, providerUser.getAddressDesc());
+//						CommonUtil.sendEmail(user.getEmail(),EmailTemplate.SUB_CAR_POOL_ENROLLED_USER, emailBody);
+//						logger.info("SENDING EMAIL");
+//					}
+//					StringBuilder providers = new StringBuilder();					
+//					providers.append("[");
+//					providers.append("['").append(providerUser.getFirstName()).append(" ").append(providerUser.getLastName()).append("',")
+//							.append(providerUser.getLocation()[1]).append(",").append(providerUser.getLocation()[0]).append(",'").append("P").append("']");									
+//					providers.append("]"); 
+//					model.addAttribute("others", providers.toString());
+//					String currentPool = providerUser.getFirstName()+ " "+providerUser.getLastName()+" | "+providerUser.getPhoneNumber()+" | "+providerUser.getEmail();
+//					model.addAttribute("currentPool",currentPool);	
+//				}
+//				double[] geoData = user.getLocation();		
+//				if(geoData!=null && geoData.length == 2)
+//					model.addAttribute("location", (String.valueOf(geoData[1])+","+String.valueOf(geoData[0])));								
+//				return "poolingRequest";			
+//			}
+//			else
+//			{
+//				model.addAttribute("message", "Session expired!! please login again");
+//				return "index";
+//			}
+//		}
 		
 		@RequestMapping(value = "/update", method = RequestMethod.POST)
 		public String update(@RequestParam("username") String userId,			

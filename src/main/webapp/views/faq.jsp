@@ -27,7 +27,7 @@ String username = request.getAttribute("username")!=null?(String)request.getAttr
 			</div>
 			<div class="app-name">Dispath Technician Route helper</div>
 			<div class="app-support">&nbsp;<BR>
-			Email: <A href="mailto:VDSI-CarPoolingSystem@one.verizon.com">vdsi@gmail.com</A><BR>
+			Email: <A href="mailto:VDSI@one.verizon.com">vdsi@gmail.com</A><BR>
 			&nbsp;<BR>
 			</div>
 		</div>
@@ -75,7 +75,7 @@ String username = request.getAttribute("username")!=null?(String)request.getAttr
 			<br>
 			Blue -  indicate users/providers who are already part of car pool.
 			<br>
-			
+			</div>
 		</td>
 	</tr>
 </table>
