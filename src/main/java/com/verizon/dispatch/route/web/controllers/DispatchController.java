@@ -94,7 +94,7 @@ public class DispatchController {
 		    update.setVehicleType("4 Wheeler");
 		    update.setVehicleCapacity(4);
 		    update.setIsEnrolled("Y");
-		    String plocation[] =  {78.340129,17.493686};
+		    double plocation[] =  {78.340129,17.493686};
 		    update.setLocation(plocation);
 		  //  update.setStartDateTime("30-07-2015");	   
 		    dispatchRepository.save(update);	    
