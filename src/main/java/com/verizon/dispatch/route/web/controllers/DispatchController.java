@@ -29,6 +29,7 @@ import com.verizon.dispatch.route.domain.TechRoute;
 import com.verizon.dispatch.route.repositories.mongodb.DispatchRepository;
 import com.verizon.dispatch.route.repositories.mongodb.TechRouteRepository;
 import com.verizon.dispatch.route.util.EmailTemplate;
+import com.verizon.dispatch.route.util.CommonUtil;
 
 /**
  * Controller for the Cloud Foundry workshop - Spring MVC version.
@@ -576,8 +577,8 @@ public class DispatchController {
 				
 					if(isLocUpdate)
 					{
-						List<TechRoute> deleteur = TechRouteRepository.findByUserId(user.getId());
-						TechRouteRepository.delete(deleteur);
+						List<TechRoute> deleteur = techRouteRepository.findByUserId(user.getId());
+						techRouteRepository.delete(deleteur);
 						logger.info("Route point deleted: "+(deleteur!=null?deleteur.size():0));
 						TechRoute[] routepoints = CommonUtil.getRoutePoints(user.getLocation());
 						if(routepoints!=null)
@@ -585,7 +586,7 @@ public class DispatchController {
 							for(TechRoute ur: routepoints)
 							{
 								ur.setUserId(user.getId());
-								TechRouteRepository.save(ur);
+								techRouteRepository.save(ur);
 								
 							}
 						}
@@ -679,7 +680,7 @@ public class DispatchController {
 					{
 						Point point = new Point(user.getLocation()[0], user.getLocation()[1]);
 						Distance distance = new Distance(1, Metrics.KILOMETERS);
-						List<TechRoute> ur = TechRouteRepository.findByLocationNear(point, distance);					
+						List<TechRoute> ur = techRouteRepository.findByLocationNear(point, distance);					
 						logger.info("user routes found:"+(ur!=null?ur.size():0));
 						if(ur!= null && ur.size()>0)
 						{
