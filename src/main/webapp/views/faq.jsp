@@ -67,10 +67,7 @@ String username = request.getAttribute("username")!=null?(String)request.getAttr
 			It checks whether the document is subject to auto-invalidation. If not, the document is considered up-to-date.
 			If the document is configured for auto-invalidation, the Dispatcher checks whether it is older or newer than the last change available. If it is older, the Dispatcher requests the current version from the CQ instance and replaces the version in the cache.
 			<br>
-			<h4>I am here for need of car pool, what happens next after I place a pooling request?</h4>
-			Application would scan all provider's location data who offer car pool, have a vacant seat in their vehicle and who's drive route falls within your location and show those provider's on the next page after you place the pooling request.
-			You can choose a provider based on your preference and submit request. An email alert will be sent to your provider with your contact details.
-			<br>
+			
 			<h4>What does the marker colors indicate on Report tab?</h4>
 			Red -   indicates users who are in need of car pool.
 			<br>
