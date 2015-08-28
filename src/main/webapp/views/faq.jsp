@@ -4,7 +4,7 @@
 <html class="vz-theme" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Car Pooling System</title>
+<title>Dispath Technician Route helper</title>
 <LINK href="resources/jquery-contextmenu.css"
 	rel="stylesheet" type="text/css">
 <LINK href="resources/jquery.jscrollpane.css"
@@ -25,9 +25,9 @@ String username = request.getAttribute("username")!=null?(String)request.getAttr
 				<IMG title="Verizon" alt="Verizon" src="/resources/VerizonLogo.png"
 					width="110%" height="110%">
 			</div>
-			<div class="app-name">Car Pooling System</div>
+			<div class="app-name">Dispath Technician Route helper</div>
 			<div class="app-support">&nbsp;<BR>
-			Email: <A href="mailto:VDSI-CarPoolingSystem@one.verizon.com">vdsi.carpooling@gmail.com</A><BR>
+			Email: <A href="mailto:VDSI-CarPoolingSystem@one.verizon.com">vdsi@gmail.com</A><BR>
 			&nbsp;<BR>
 			</div>
 		</div>
@@ -37,7 +37,7 @@ String username = request.getAttribute("username")!=null?(String)request.getAttr
 		<table style = "margin-top: 5px; float: left;">
 			<tr>
 				<td>
-					<a href="login?username=<%=username%>" id="poolingRequest" title="poolingRequest" style = "padding-right : 5px; font-weight: bold; border-right : 2px solid white; color : white; font-size : 14px;">Pooling Request</a>&nbsp;&nbsp;
+					<a href="login?username=<%=username%>" id="poolingRequest" title="poolingRequest" style = "padding-right : 5px; font-weight: bold; border-right : 2px solid white; color : white; font-size : 14px;">Dispatch Request</a>&nbsp;&nbsp;
 				</td>				
 				<td>
 					<a href="report?username=<%=username%>" id="reports" title="reports" style = "padding-right : 5px; font-weight: bold; border-right : 2px solid white; color : white; font-size : 14px;">Reports</a>&nbsp;&nbsp;
@@ -57,11 +57,15 @@ String username = request.getAttribute("username")!=null?(String)request.getAttr
 		<td style="width:99%;">
 			<div class="block" >
 			
-			<h4>How do I place a pooling request?</h4>
-			Whether you want to offer(provider) or need(user) a car pool, Use Pooling Request tab to set your exact home location using the marker on the map and submit.
+			<h4>What is the Dispatcher?</h4>
+			The Dispatcher is the Adobe caching and/or load balancing tool that helps realize a fast and dynamic Web authoring environment. For caching, the Dispatcher works as part of an HTTP server, such as Apache, with the aim of storing (or "caching") as much of the static website content as possible and accessing the website's layout engine as infrequently as possible. In a load balancing role, the Dispatcher distributes user requests (load) across different clustered CQ instances (renders).
+			For caching, the Dispatcher module uses the Web server's ability to serve static content. The Dispatcher places the cached documents in the document root of the Web server.
 			<br>
-			<h4>I am here to offer car pool, what happens next after I place a pooling request?</h4>
-			Application would scan all user's location data who are in need of car pool and filter only the users who fall in your drive route and alert them over email sharing your contact information. Also you would be alerted too with their contacts on your registered email.
+			<h4>How does the Dispatcher determine if a document is up-to-date?</h4>
+			To determine whether a document is up-to-date, the Dispatcher performs these actions:
+
+			It checks whether the document is subject to auto-invalidation. If not, the document is considered up-to-date.
+			If the document is configured for auto-invalidation, the Dispatcher checks whether it is older or newer than the last change available. If it is older, the Dispatcher requests the current version from the CQ instance and replaces the version in the cache.
 			<br>
 			<h4>I am here for need of car pool, what happens next after I place a pooling request?</h4>
 			Application would scan all provider's location data who offer car pool, have a vacant seat in their vehicle and who's drive route falls within your location and show those provider's on the next page after you place the pooling request.
@@ -74,15 +78,7 @@ String username = request.getAttribute("username")!=null?(String)request.getAttr
 			<br>
 			Blue -  indicate users/providers who are already part of car pool.
 			<br>
-			<div class="VZFooter"><img title="Go Green" alt="Go Green" style="margin-left: -18px;"
-			src="resources/goGreen.gif" width = "110%" height = "110%" ></div>
-			<h4>What happens if I change my home location after I enrol in a provider's car pool?</h4>
-			We run our backend algorithm to see if you are still a fit in the existing car pool, if not we will drop you from that car pool, alert you and the provider over email and you need to choose a new provider again otherwise its BAU.
 			
-			<br>
-			<h3 style = "font-weight: bold; color: green;">SAVE FUEL. SAVE ENVIRONMENT. GO GREEN.</h3>
-			
-			<hr>
 		</td>
 	</tr>
 </table>
@@ -90,7 +86,7 @@ String username = request.getAttribute("username")!=null?(String)request.getAttr
 </div>
 <div class="footer">
    <div class="layout">
-       <div class="copyrights">&copy; 2015 Designed by Team Hackers (Surendra Ganti, Pavan Akurathi, Pavan Sathya) <a href="#">FAQ</a> |  <a href="#">Feedback</a></div>
+       <div class="copyrights">&copy; 2015 Designed by Rockers (Jeeva,Muthu,Sakthi) <a href="#">FAQ</a> |  <a href="#">Feedback</a></div>
    </div>
 </div>
 
