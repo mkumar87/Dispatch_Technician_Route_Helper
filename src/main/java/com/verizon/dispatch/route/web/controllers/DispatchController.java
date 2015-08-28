@@ -83,7 +83,7 @@ public class DispatchController {
 			
 			logger.info("Current date and time = [{}], port = [{}].", serverTime, port);
 			
-			/*User update = new User();
+			User update = new User();
 			update.setId("2548579");	    
 		    update.setEmail("pavan.akurathi@gmail.com");	    
 		    update.setFirstName("Pavan");	    
@@ -124,7 +124,7 @@ public class DispatchController {
 		    String glocation[] =  {"78.533762","17.449104"};
 		    update.setLocation(glocation);
 		    update.setStartDateTime("07/30/2015");	    
-		    dispatchRepository.save(update);	*/
+		    dispatchRepository.save(update);	
 			
 			return "index";
 		}

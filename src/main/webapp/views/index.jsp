@@ -84,7 +84,8 @@ Email: <A href="mailto:VDSI@one.verizon.com">vdsi@gmail.com</A><BR>
 				spellcheck="false" type="password" autocomplete="off"></div>
 			</div>
 			<div class="field buttonsrow">
-
+			<div class="right"><a class="button"
+				id="createBtn" href="createNewUser">New User</a></div>
 			<div class="right"><a class="button"
 				id="loginBtn"  onkeypress="login();" onclick= "login();" >Log On</a></div>
 			</div>
