@@ -89,16 +89,16 @@ public class DispatchController {
 		    update.setFirstName("Pavan");	    
 		    update.setLastName("Kumar");	    
 		    update.setPhoneNumber("8332898007");
-		    update.setZipCode("500050");	    
+		    update.setZipCode(500050);	    
 		    update.setPoolMode("P");
 		    update.setVehicleType("4 Wheeler");
-		    update.setVehicleCapacity("4");
+		    update.setVehicleCapacity(4);
 		    update.setIsEnrolled("Y");
-		    String plocation[] =  {"78.340129","17.493686"};
+		    String plocation[] =  {78.340129,17.493686};
 		    update.setLocation(plocation);
-		    update.setStartDateTime("30-07-2015");	   
+		  //  update.setStartDateTime("30-07-2015");	   
 		    dispatchRepository.save(update);	    
-		    
+		    /* 
 		    update = new User();
 		    update.setId("2548580");	    
 		    update.setEmail("satyapavan@gmail.com");	    
@@ -124,7 +124,7 @@ public class DispatchController {
 		    String glocation[] =  {"78.533762","17.449104"};
 		    update.setLocation(glocation);
 		    update.setStartDateTime("07/30/2015");	    
-		    dispatchRepository.save(update);	
+		    dispatchRepository.save(update);	*/
 			
 			return "index";
 		}
